@@ -26,10 +26,10 @@ export const CredibilityBar: React.FC = () => {
               <Globe2 className="w-6 h-6" />
             </div>
             <div className="text-2xl sm:text-3xl font-black text-white mb-1">
-              Brasil & Exterior
+              7 idiomas
             </div>
             <p className="text-xs sm:text-sm text-secondary-300 max-w-xs">
-              Alunos conectados em vários estados do país e fora do Brasil nas aulas online ao vivo.
+              Inglês, espanhol, francês, italiano, alemão, português e japonês — tem aluno virando poliglota.
             </p>
           </div>
 
@@ -39,10 +39,10 @@ export const CredibilityBar: React.FC = () => {
               <HeartHandshake className="w-6 h-6" />
             </div>
             <div className="text-2xl sm:text-3xl font-black text-white mb-1">
-              Presencial em SBC
+              +5 condomínios
             </div>
             <p className="text-xs sm:text-sm text-secondary-300 max-w-xs">
-              Aulas diretas em condomínios e empresas de São Bernardo do Campo com segurança.
+              Parceiros em São Bernardo do Campo, com aulas para crianças e adolescentes desde 2022.
             </p>
           </div>
         </div>

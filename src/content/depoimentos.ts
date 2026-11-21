@@ -1,33 +1,43 @@
 import { TestimonialItem } from '@/types';
 
 /**
- * REGRAS DE CONTEÚDO:
+ * DEPOIMENTOS REAIS — fonte: CV institucional Snowfield 2026 ("Os Protagonistas").
  * NUNCA inventar depoimentos fictícios.
- * Onde faltar dado real da pasta /conteudo, deve-se usar placeholder visível entre colchetes.
  */
 export const testimonialsData: TestimonialItem[] = [
   {
-    id: 'depoimento-1',
-    authorName: '[NOME DO ALUNO 1 - ADULTO]',
-    roleOrProfile: 'Aluno de Inglês Online',
-    languageOrCourse: 'Inglês Regular',
-    content: '[DEPOIMENTO REAL DO ALUNO ADULTO: "A flexibilidade dos horários e a paciência do professor me fizeram perder a vergonha de falar nas reuniões globais." - AGUARDANDO DADOS DA PASTA /CONTEUDO]',
-    isPlaceholder: true,
+    id: 'andressa-accioli',
+    authorName: 'Andressa Accioli',
+    roleOrProfile: 'Gerente de Agro • Serasa Experian',
+    languageOrCourse: 'Inglês Business',
+    content: 'Percebi que desenvolvi muito com a metodologia. As aulas são sempre muito divertidas e muito didáticas. Já concluí o Inglês business intermediário e agora estou no avançado.',
   },
   {
-    id: 'depoimento-2',
-    authorName: '[NOME DA MÃE/PAI 2 - CONDOMÍNIO]',
-    roleOrProfile: 'Mãe de aluno em São Bernardo do Campo',
-    languageOrCourse: 'Inglês Kids em Condomínio',
-    content: '[DEPOIMENTO REAL DE PAI/MÃE: "A comodidade de ter aula no próprio condomínio com metodologia lúdica transformou a relação do meu filho com o inglês." - AGUARDANDO DADOS DA PASTA /CONTEUDO]',
-    isPlaceholder: true,
+    id: 'gustavo-correia',
+    authorName: 'Gustavo Correia',
+    roleOrProfile: 'Supervisor de Vendas',
+    languageOrCourse: 'Espanhol',
+    content: 'Estudiar en Snowfield Language es increíble. He estudiado español con la profesora Barbara, me gustó mucho su flexibilidad en su horario y ejercicios prácticos que me hacen aprender el idioma deseado mejor y más rápido. También agradezco a Priscila con quién tuve clase en el primer módulo. Solo tengo que dar gracias.',
   },
   {
-    id: 'depoimento-3',
-    authorName: '[GESTOR DE RH / ALUNO CORPORATIVO 3]',
-    roleOrProfile: 'Gestor de Equipe',
-    languageOrCourse: 'Aulas Corporativas In-Company',
-    content: '[DEPOIMENTO REAL CORPORATIVO: "A equipe ganhou segurança prática para apresentações com clientes estrangeiros em poucos meses." - AGUARDANDO DADOS DA PASTA /CONTEUDO]',
-    isPlaceholder: true,
+    id: 'adriana-abbade',
+    authorName: 'Adriana Abbade',
+    roleOrProfile: 'Especialista de TI • GFT Technologies SE',
+    languageOrCourse: 'Inglês',
+    content: 'Inglês era difícil para mim, mas após 1 ano, tudo ficou mais claro e interessante!',
+  },
+  {
+    id: 'bianca-nannini',
+    authorName: 'Bianca Nannini',
+    roleOrProfile: 'Marketing • T-Systems SA',
+    languageOrCourse: 'Inglês',
+    content: 'I could learn English and also develop my oral skills, specially during presentations, which is wonderful! That makes me motivated and excited to reach fluency.',
+  },
+  {
+    id: 'higor-ramos',
+    authorName: 'Higor Ramos',
+    roleOrProfile: 'Gerente de TI • Serasa Experian',
+    languageOrCourse: 'Inglês Business',
+    content: 'Profissionalismo, criatividade e ambiente descontraído resumem muito bem meus momentos na Snowfield Languages.',
   },
 ];

@@ -38,7 +38,7 @@ export const faqData: FaqItem[] = [
   },
   {
     question: 'Quais idiomas são oferecidos?',
-    answer: 'Oferecemos [LISTAR IDIOMAS] – com destaque para Inglês, Espanhol, Francês, Alemão e Italiano, além de módulos especiais para viagens e preparatórios para exames (TOEFL, Cambridge e Duolingo English Test).',
+    answer: 'Oferecemos Inglês, Espanhol, Francês, Alemão, Italiano, Português (para estrangeiros) e Japonês, além de módulos especiais para viagens e preparatórios para exames (TOEFL, Cambridge e Duolingo English Test).',
     category: 'geral',
   },
 ];

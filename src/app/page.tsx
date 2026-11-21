@@ -8,6 +8,9 @@ import { ModalitiesSection } from '@/components/home/ModalitiesSection';
 import { SpecialCourses } from '@/components/home/SpecialCourses';
 import { TestimonialsSection } from '@/components/home/TestimonialsSection';
 import { CredibilityBar } from '@/components/home/CredibilityBar';
+import { PartnersStrip } from '@/components/home/PartnersStrip';
+import { PhotoGallery } from '@/components/home/PhotoGallery';
+import { TeamSection } from '@/components/home/TeamSection';
 import { FAQSection } from '@/components/home/FAQSection';
 import { FinalCTA } from '@/components/home/FinalCTA';
 import { siteConfig } from '@/content/site';
@@ -56,9 +59,12 @@ export default function HomePage() {
       />
 
       <Hero />
+      <PartnersStrip />
       <AudienceSelector />
+      <PhotoGallery />
       <LanguageCards />
       <MethodologyPreview />
+      <TeamSection />
       <ModalitiesSection />
       <SpecialCourses />
       <CredibilityBar />

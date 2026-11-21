@@ -1,63 +1,63 @@
 import React from 'react';
 import { testimonialsData } from '@/content/depoimentos';
-import { PlaceholderBadge } from '@/components/ui/PlaceholderBadge';
-import { Quote, MessageSquare } from 'lucide-react';
+import { siteConfig } from '@/content/site';
+import { Quote } from 'lucide-react';
+import { InstagramIcon } from '@/components/ui/InstagramIcon';
 
 export const TestimonialsSection: React.FC = () => {
+  const tints = ['bg-primary-50 border-primary-100', 'bg-secondary-50 border-secondary-200', 'bg-white border-secondary-200'];
+
   return (
     <section className="py-16 sm:py-24 bg-white border-b border-secondary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-primary-600 block mb-2">
-            Experiências Reais
+            Os protagonistas
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary-900 tracking-tight">
-            O que dizem os nossos alunos e responsáveis
+            Quem estuda com a gente conta
           </h2>
           <p className="mt-3 text-sm sm:text-base text-secondary-600">
-            Transparência total: valorizamos o feedback sincero de quem vive a rotina das nossas aulas.
+            Em português, inglês ou espanhol — do jeito que cada aluno quis escrever.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonialsData.map((item) => (
-            <div
-              key={item.id}
-              className="bg-secondary-50/70 rounded-3xl p-7 sm:p-8 border border-secondary-200/80 shadow-sm flex flex-col justify-between relative"
-            >
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center mb-6">
-                  <Quote className="w-5 h-5" />
-                </div>
-
-                <div className="text-sm text-secondary-700 leading-relaxed mb-6 italic">
-                  {item.isPlaceholder ? (
-                    <div className="space-y-2">
-                      <PlaceholderBadge text={item.content} />
-                      <p className="text-xs text-secondary-400 not-italic">
-                        Espaço reservado para inclusão do depoimento real do aluno/responsável.
-                      </p>
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 [&>*]:mb-6">
+          {testimonialsData.map((item, i) => {
+            const initials = item.authorName.split(' ').map((n) => n[0]).slice(0, 2).join('');
+            return (
+              <figure
+                key={item.id}
+                className={`break-inside-avoid rounded-3xl p-7 border shadow-sm ${tints[i % tints.length]}`}
+              >
+                <Quote className="w-8 h-8 text-primary-400 mb-4" aria-hidden />
+                <blockquote className="text-base text-secondary-800 leading-relaxed">
+                  “{item.content}”
+                </blockquote>
+                <figcaption className="mt-6 flex items-center gap-3">
+                  <span className="w-11 h-11 rounded-full bg-gradient-to-br from-primary-400 to-secondary-600 text-white font-bold flex items-center justify-center text-sm">
+                    {initials}
+                  </span>
+                  <div>
+                    <div className="font-bold text-sm text-secondary-900">{item.authorName}</div>
+                    <div className="text-xs text-secondary-500">
+                      {item.roleOrProfile} • <span className="text-primary-600 font-medium">{item.languageOrCourse}</span>
                     </div>
-                  ) : (
-                    `"${item.content}"`
-                  )}
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-secondary-200/70">
-                <div className="font-bold text-sm text-secondary-900 flex items-center gap-1.5 flex-wrap">
-                  {item.isPlaceholder ? (
-                    <PlaceholderBadge text={item.authorName} />
-                  ) : (
-                    item.authorName
-                  )}
-                </div>
-                <div className="text-xs text-secondary-500 mt-0.5">
-                  {item.roleOrProfile} • <span className="text-primary-600 font-medium">{item.languageOrCourse}</span>
-                </div>
-              </div>
-            </div>
-          ))}
+                  </div>
+                </figcaption>
+              </figure>
+            );
+          })}
+          <a
+            href={siteConfig.instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="break-inside-avoid flex flex-col items-center justify-center text-center gap-2 rounded-3xl p-7 bg-gradient-to-br from-primary-500 to-secondary-600 text-white shadow-lg hover:-translate-y-0.5 transition-transform"
+          >
+            <InstagramIcon className="w-8 h-8" />
+            <span className="font-hand text-3xl">quer ver mais?</span>
+            <span className="text-sm text-white/90">Acompanhe o dia a dia em {siteConfig.instagram.handle}</span>
+          </a>
         </div>
       </div>
     </section>

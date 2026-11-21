@@ -126,8 +126,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li className="pt-1">
-                <span className="text-xs text-secondary-400 flex items-center gap-1">
-                  Outros: <PlaceholderBadge text={siteConfig.languagesPlaceholder} />
+                <span className="text-xs text-secondary-400">
+                  Também: {siteConfig.languagesPlaceholder}
                 </span>
               </li>
             </ul>

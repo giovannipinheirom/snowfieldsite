@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans, Caveat } from 'next/font/google';
 import './globals.css';
 import { SeasonalBanner } from '@/components/layout/SeasonalBanner';
 import { Header } from '@/components/layout/Header';
@@ -19,6 +19,13 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: 'swap',
   weight: ['500', '600', '700', '800'],
   variable: '--font-heading',
+});
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['500', '700'],
+  variable: '--font-hand',
 });
 
 export const viewport: Viewport = {
@@ -73,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${plusJakarta.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${plusJakarta.variable} ${caveat.variable}`}>
       <body className="font-sans antialiased min-h-screen flex flex-col bg-secondary-50 text-secondary-900">
         <SeasonalBanner />
         <Header />

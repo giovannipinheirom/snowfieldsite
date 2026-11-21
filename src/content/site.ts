@@ -36,7 +36,7 @@ export const siteConfig: SiteContactInfo = {
     time: '8h às 22h',
     daysPlaceholder: '[DIAS DA SEMANA]',
   },
-  languagesPlaceholder: '[LISTAR IDIOMAS]',
+  languagesPlaceholder: 'Português e Japonês',
   services: [
     'Inglês regular para crianças, adolescentes e adultos',
     'Aulas de idiomas em condomínios residenciais',
