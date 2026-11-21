@@ -3,42 +3,42 @@
 @layer base {
   :root {
     /* DESIGN TOKENS - SNOWFIELD LANGUAGES */
-    /* Primária: Azul Ciano (Identidade Instagram @snowfield_languages) */
-    --color-primary-50: #ecfeff;
-    --color-primary-100: #cffafe;
-    --color-primary-200: #a5f3fc;
-    --color-primary-300: #67e8f9;
-    --color-primary-400: #22d3ee;
-    --color-primary-500: #06b6d4; /* Ciano principal */
-    --color-primary-600: #0891b2; /* Ciano profundo */
-    --color-primary-700: #0e7490;
-    --color-primary-800: #155e75;
-    --color-primary-900: #164e63;
-    --color-primary-950: #083344;
+    /* Primária: Ciano da logo (fundo #0BC6ED, floco/SNOWFIELD #3ECBE0) */
+    --color-primary-50: #ebfbfe;
+    --color-primary-100: #cdf4fc;
+    --color-primary-200: #a1e9f9;
+    --color-primary-300: #62daf3;
+    --color-primary-400: #3ecbe0;
+    --color-primary-500: #0bc6ed; /* Ciano da logo (fundo) */
+    --color-primary-600: #0a9cc0; /* Ciano profundo */
+    --color-primary-700: #0b7d9c;
+    --color-primary-800: #106680;
+    --color-primary-900: #13546a;
+    --color-primary-950: #073747;
 
-    /* Secundária: Navy / Slate Institucional */
-    --color-secondary-50: #f8fafc;
-    --color-secondary-100: #f1f5f9;
-    --color-secondary-200: #e2e8f0;
-    --color-secondary-300: #cbd5e1;
-    --color-secondary-400: #94a3b8;
-    --color-secondary-500: #64748b;
-    --color-secondary-600: #475569;
-    --color-secondary-700: #334155;
-    --color-secondary-800: #1e293b;
-    --color-secondary-900: #0f172a; /* Navy profundo */
-    --color-secondary-950: #020617;
+    /* Secundária: Azul-petróleo da logo (LANGUAGES #44748D) */
+    --color-secondary-50: #f4f8fa;
+    --color-secondary-100: #e6eff3;
+    --color-secondary-200: #cddde5;
+    --color-secondary-300: #a8c3d0;
+    --color-secondary-400: #7da2b4;
+    --color-secondary-500: #5b8499;
+    --color-secondary-600: #44748d;
+    --color-secondary-700: #3a6276;
+    --color-secondary-800: #2f4f60;
+    --color-secondary-900: #223b48; /* Petróleo profundo */
+    --color-secondary-950: #142530;
 
     /* Destaque: Ciano Vibrante & Âmbar / Ice Glow */
-    --color-accent-ice: #38bdf8;
-    --color-accent-cyan: #00d8f6;
+    --color-accent-ice: #3ecbe0;
+    --color-accent-cyan: #0bc6ed;
     --color-accent-amber: #f59e0b;
 
     /* Superfícies e Textos */
-    --background: #f8fafc;
-    --foreground: #0f172a;
+    --background: #f4f8fa;
+    --foreground: #223b48;
     --surface-card: #ffffff;
-    --border-light: #e2e8f0;
+    --border-light: #cddde5;
   }
 }
 

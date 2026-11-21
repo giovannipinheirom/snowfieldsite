@@ -23,13 +23,15 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
           {/* Coluna 1: Sobre & Proposta */}
           <div className="space-y-4">
-            <div className="relative w-48 h-10">
-              <Image 
-                src="/logo.svg" 
-                alt="Snowfield Languages" 
-                fill
-                className="object-contain object-left brightness-0 invert"
-              />
+            <div className="inline-block bg-white rounded-xl px-4 py-2.5">
+              <div className="relative w-44 h-14">
+                <Image 
+                  src="/logo.png" 
+                  alt="Snowfield Languages" 
+                  fill
+                  className="object-contain object-left"
+                />
+              </div>
             </div>
             <p className="text-sm text-secondary-400 leading-relaxed">
               Aulas divertidas, leves e personalizadas para alunos de 4 a 90 anos. Em atividade desde {siteConfig.sinceYear}, transformando a confiança de quem quer falar com fluência de verdade.

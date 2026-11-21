@@ -31,22 +31,22 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-cyan-50/60 via-white to-white py-16 sm:py-24 lg:py-28 border-b border-secondary-100">
+    <section className="relative overflow-hidden bg-gradient-to-b from-primary-50/60 via-white to-white py-16 sm:py-24 lg:py-28 border-b border-secondary-100">
       {/* Elementos geométricos de fundo sutis (tema Snowfield) */}
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-cyan-200/25 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-primary-200/25 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-80 h-80 bg-primary-200/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           {/* Badge de Credibilidade */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-cyan-200 shadow-sm text-xs sm:text-sm font-semibold text-primary-700 animate-in fade-in duration-300">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-primary-200 shadow-sm text-xs sm:text-sm font-semibold text-primary-700 animate-in fade-in duration-300">
             <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
             <span>Em atividade desde {siteConfig.sinceYear} • Sem fórmulas engessadas</span>
           </div>
 
           {/* Promessa Principal */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-secondary-900 tracking-tight leading-[1.12]">
-            Aulas <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-cyan-500">divertidas</span> e{' '}
+            Aulas <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-500">divertidas</span> e{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-700 to-primary-500">personalizadas</span>.
           </h1>
 

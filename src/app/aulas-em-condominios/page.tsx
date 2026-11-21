@@ -48,7 +48,7 @@ export default function CondominiosPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <Building className="w-3.5 h-3.5 text-primary-600" />
             <span>São Bernardo do Campo • Aulas em Condomínios</span>
           </div>
@@ -77,10 +77,10 @@ export default function CondominiosPage() {
           {advantages.map((item, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-3xl bg-cyan-50/40 border border-cyan-100 flex flex-col justify-between"
+              className="p-6 rounded-3xl bg-primary-50/40 border border-primary-100 flex flex-col justify-between"
             >
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-5 border border-cyan-100">
+                <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-5 border border-primary-100">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold text-secondary-900 mb-2">
@@ -96,13 +96,13 @@ export default function CondominiosPage() {
 
         {/* Como Funciona na Prática */}
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary-950 via-secondary-900 to-primary-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl mb-20">
-          <h2 className="text-2xl sm:text-3xl font-black mb-8 text-center text-cyan-300">
+          <h2 className="text-2xl sm:text-3xl font-black mb-8 text-center text-primary-300">
             Como levamos as aulas até o seu condomínio?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="bg-white/10 p-6 rounded-2xl border border-white/10 space-y-2">
-              <span className="w-8 h-8 rounded-full bg-cyan-400 text-secondary-950 font-black inline-flex items-center justify-center text-sm">
+              <span className="w-8 h-8 rounded-full bg-primary-400 text-secondary-950 font-black inline-flex items-center justify-center text-sm">
                 1
               </span>
               <h4 className="font-bold text-base text-white">Mapeamento</h4>
@@ -112,7 +112,7 @@ export default function CondominiosPage() {
             </div>
 
             <div className="bg-white/10 p-6 rounded-2xl border border-white/10 space-y-2">
-              <span className="w-8 h-8 rounded-full bg-cyan-400 text-secondary-950 font-black inline-flex items-center justify-center text-sm">
+              <span className="w-8 h-8 rounded-full bg-primary-400 text-secondary-950 font-black inline-flex items-center justify-center text-sm">
                 2
               </span>
               <h4 className="font-bold text-base text-white">Apresentação</h4>
@@ -122,7 +122,7 @@ export default function CondominiosPage() {
             </div>
 
             <div className="bg-white/10 p-6 rounded-2xl border border-white/10 space-y-2">
-              <span className="w-8 h-8 rounded-full bg-cyan-400 text-secondary-950 font-black inline-flex items-center justify-center text-sm">
+              <span className="w-8 h-8 rounded-full bg-primary-400 text-secondary-950 font-black inline-flex items-center justify-center text-sm">
                 3
               </span>
               <h4 className="font-bold text-base text-white">Início das Aulas</h4>

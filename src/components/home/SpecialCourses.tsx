@@ -20,28 +20,28 @@ export const SpecialCourses: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Card 1: Intensivo para Viagens */}
-          <div className="bg-gradient-to-br from-cyan-900 to-secondary-950 rounded-3xl p-8 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
+          <div className="bg-gradient-to-br from-primary-900 to-secondary-950 rounded-3xl p-8 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
             <div className="relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-cyan-300">
+              <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-primary-300">
                 <Plane className="w-6 h-6" />
               </div>
-              <span className="text-xs font-bold uppercase tracking-wider text-cyan-300 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary-300 block mb-1">
                 Sobrevivência & Autonomia
               </span>
               <h3 className="text-2xl font-black text-white mb-3">
                 Intensivo para Viagens
               </h3>
-              <p className="text-sm text-cyan-100/80 leading-relaxed mb-6">
+              <p className="text-sm text-primary-100/80 leading-relaxed mb-6">
                 Módulos rápidos de 4 a 8 semanas focados nas situações reais que você enfrentará: aeroporto, imigração, alfândega, hotel, compras e resolução de imprevistos.
               </p>
 
-              <ul className="space-y-2 mb-8 text-xs sm:text-sm text-cyan-50">
+              <ul className="space-y-2 mb-8 text-xs sm:text-sm text-primary-50">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-primary-400 shrink-0" />
                   <span>Simulações de imigração sem medo</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-primary-400 shrink-0" />
                   <span>Guia de bolso prático em PDF incluso</span>
                 </li>
               </ul>
@@ -50,7 +50,7 @@ export const SpecialCourses: React.FC = () => {
             <div className="pt-4 border-t border-white/10 relative z-10">
               <Link
                 href="/intensivo-para-viagens"
-                className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-secondary-950 font-bold py-3 px-6 rounded-xl transition-colors text-sm shadow-md"
+                className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-400 text-secondary-950 font-bold py-3 px-6 rounded-xl transition-colors text-sm shadow-md"
               >
                 <span>Conhecer o intensivo de viagens</span>
                 <ArrowRight className="w-4 h-4" />

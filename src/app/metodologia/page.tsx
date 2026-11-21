@@ -51,7 +51,7 @@ export default function MetodologiaPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5 text-primary-600" />
             <span>Abordagem Pedagógica Snowfield</span>
           </div>
@@ -89,39 +89,39 @@ export default function MetodologiaPage() {
             <h2 className="text-2xl sm:text-3xl font-black text-white">
               A Jornada Passo a Passo na Snowfield
             </h2>
-            <p className="text-xs sm:text-sm text-cyan-200 mt-2">
+            <p className="text-xs sm:text-sm text-primary-200 mt-2">
               Da primeira conversa à conquista da fluência espontânea
             </p>
           </div>
 
-          <div className="space-y-8 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-cyan-500/30">
+          <div className="space-y-8 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-primary-500/30">
             <div className="relative pl-12">
-              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-cyan-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-cyan-300">1. Alinhamento Inicial e Teste de Nível</h4>
+              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
+              <h4 className="text-lg font-bold text-primary-300">1. Alinhamento Inicial e Teste de Nível</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 Você faz nosso teste online gratuito ou agenda uma conversa rápida para mapearmos seus objetivos prioritários.
               </p>
             </div>
 
             <div className="relative pl-12">
-              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-cyan-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-cyan-300">2. Planejamento Sob Medida</h4>
+              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
+              <h4 className="text-lg font-bold text-primary-300">2. Planejamento Sob Medida</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 O professor desenha a trilha pedagógica: escolha do formato (online ou presencial em SBC), temas de interesse e frequência ideal.
               </p>
             </div>
 
             <div className="relative pl-12">
-              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-cyan-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-cyan-300">3. Aulas Comunicativas e Imersão Prática</h4>
+              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
+              <h4 className="text-lg font-bold text-primary-300">3. Aulas Comunicativas e Imersão Prática</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 Conversação ativa desde o primeiro encontro. Prática constante com situações do cotidiano e simulações do mundo real.
               </p>
             </div>
 
             <div className="relative pl-12">
-              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-cyan-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-cyan-300">4. Avaliação Contínua e Celebração de Resultados</h4>
+              <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
+              <h4 className="text-lg font-bold text-primary-300">4. Avaliação Contínua e Celebração de Resultados</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 Acompanhamento periódico de segurança verbal, com relatórios detalhados para o aluno (e para os pais ou empresas).
               </p>
@@ -151,7 +151,7 @@ export default function MetodologiaPage() {
               href="/teste-de-nivel"
               className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-cyan-300" />
+              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Fazer teste de nível online</span>
             </Link>
           </div>

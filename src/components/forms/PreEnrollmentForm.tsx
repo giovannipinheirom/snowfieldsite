@@ -280,8 +280,8 @@ export const PreEnrollmentForm: React.FC<PreEnrollmentFormProps> = ({
           {/* CAMPOS CONDICIONAIS */}
           {/* Condicional 1: Idade do aluno (Apenas se "filho") */}
           {formData.audience === 'filho' && (
-            <div className="p-4 rounded-xl bg-cyan-50/60 border border-cyan-100 animate-in fade-in duration-200">
-              <label htmlFor="student-age-input" className="block text-sm font-bold text-cyan-900 mb-1.5">
+            <div className="p-4 rounded-xl bg-primary-50/60 border border-primary-100 animate-in fade-in duration-200">
+              <label htmlFor="student-age-input" className="block text-sm font-bold text-primary-900 mb-1.5">
                 Idade do seu filho(a) <span className="text-rose-500">*</span>
               </label>
               <input
@@ -290,9 +290,9 @@ export const PreEnrollmentForm: React.FC<PreEnrollmentFormProps> = ({
                 value={formData.studentAge}
                 onChange={(e) => setFormData({ ...formData, studentAge: e.target.value })}
                 placeholder="Ex: 8 anos"
-                className="w-full px-4 py-2 rounded-xl border border-cyan-300 focus:ring-2 focus:ring-primary-500 text-sm text-secondary-900 bg-white"
+                className="w-full px-4 py-2 rounded-xl border border-primary-300 focus:ring-2 focus:ring-primary-500 text-sm text-secondary-900 bg-white"
               />
-              <p className="mt-1 text-xs text-cyan-800">
+              <p className="mt-1 text-xs text-primary-800">
                 Aulas lúdicas adaptadas para crianças de 4 a 12 anos e metodologia ativa para adolescentes.
               </p>
             </div>

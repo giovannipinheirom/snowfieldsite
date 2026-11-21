@@ -72,7 +72,7 @@ export default function ContatoPage() {
                   href={`mailto:${siteConfig.email}`}
                   className="flex items-start gap-3 p-4 rounded-2xl bg-white border border-secondary-200/80 hover:border-primary-400 transition-colors group shadow-sm"
                 >
-                  <div className="p-2.5 rounded-xl bg-cyan-100 text-cyan-800 shrink-0 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                  <div className="p-2.5 rounded-xl bg-primary-100 text-primary-800 shrink-0 group-hover:bg-primary-600 group-hover:text-white transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>

@@ -52,7 +52,7 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho do Idioma */}
         <div className="max-w-4xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-4 h-4 text-primary-600" />
             <span>Curso de Idiomas • {lang.badge}</span>
           </div>
@@ -77,7 +77,7 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
               href="/teste-de-nivel"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-cyan-300" />
+              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Fazer teste de nível online</span>
             </Link>
           </div>
@@ -108,9 +108,9 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
           </div>
 
           {/* 2. Exemplo de Atividades de uma Aula */}
-          <div className="p-8 rounded-3xl bg-cyan-50/50 border border-cyan-200/80">
+          <div className="p-8 rounded-3xl bg-primary-50/50 border border-primary-200/80">
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2.5 rounded-xl bg-cyan-200 text-cyan-900">
+              <div className="p-2.5 rounded-xl bg-primary-200 text-primary-900">
                 <BookOpen className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-secondary-900">
@@ -122,7 +122,7 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
             </p>
             <ul className="space-y-3 text-xs sm:text-sm text-secondary-800">
               {lang.typicalActivities.map((act, i) => (
-                <li key={i} className="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cyan-100 shadow-sm">
+                <li key={i} className="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-primary-100 shadow-sm">
                   <span className="w-5 h-5 rounded-full bg-primary-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
                     {i + 1}
                   </span>

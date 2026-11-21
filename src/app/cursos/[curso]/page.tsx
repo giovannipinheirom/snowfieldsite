@@ -122,7 +122,7 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
             </h3>
             <div className="space-y-3">
               {course.features.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-cyan-50/40 border border-cyan-100 text-sm text-secondary-800">
+                <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-primary-50/40 border border-primary-100 text-sm text-secondary-800">
                   <CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </div>
@@ -138,12 +138,12 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
                   <span className="text-xs text-secondary-400 uppercase tracking-wider block">
                     Valor do curso
                   </span>
-                  <div className="text-3xl sm:text-4xl font-black text-cyan-300">
+                  <div className="text-3xl sm:text-4xl font-black text-primary-300">
                     {course.price}
                   </div>
                 </div>
               ) : (
-                <div className="text-xl font-bold text-cyan-200">
+                <div className="text-xl font-bold text-primary-200">
                   Condições especiais sob consulta
                 </div>
               )}

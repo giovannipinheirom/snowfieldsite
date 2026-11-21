@@ -22,7 +22,7 @@ export default function NotFound() {
   return (
     <div className="bg-white min-h-[70vh] flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-xl w-full text-center space-y-8">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-cyan-50 border border-cyan-200 text-primary-600 shadow-inner">
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-primary-50 border border-primary-200 text-primary-600 shadow-inner">
           <span className="text-3xl font-black">404</span>
         </div>
 

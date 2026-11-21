@@ -66,9 +66,9 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 py-2 focus-visible:ring-2 focus-visible:ring-primary-500 rounded-md">
-            <div className="relative w-48 sm:w-56 h-12">
+            <div className="relative w-44 sm:w-52 h-14">
               <Image 
-                src="/logo.svg" 
+                src="/logo.png" 
                 alt="Snowfield Languages - Escola de Idiomas" 
                 fill
                 priority

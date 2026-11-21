@@ -37,7 +37,7 @@ export const LanguageCards: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-cyan-50 text-primary-700 border border-cyan-100">
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary-50 text-primary-700 border border-primary-100">
                     {lang.badge}
                   </span>
                   <div className="w-8 h-8 rounded-full bg-secondary-100 group-hover:bg-primary-500 group-hover:text-white text-secondary-500 flex items-center justify-center transition-colors">

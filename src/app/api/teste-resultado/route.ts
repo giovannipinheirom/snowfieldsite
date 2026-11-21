@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
 
     // Formata os detalhes do teste para o e-mail
     const testDetails = `
-      <p><strong>Nível Estimado:</strong> <span style="font-size: 16px; color: #0891b2; font-weight: bold;">${data.level}</span></p>
+      <p><strong>Nível Estimado:</strong> <span style="font-size: 16px; color: #0a9cc0; font-weight: bold;">${data.level}</span></p>
       <p><strong>Pontuação Total:</strong> ${data.totalScore} de ${data.totalQuestions} acertos</p>
       <p><strong>Pontuação por Nível:</strong></p>
       <ul>
@@ -48,8 +48,8 @@ export async function POST(req: NextRequest) {
           .join('')}
       </ul>
       <details>
-        <summary style="cursor: pointer; color: #0891b2; font-weight: bold;">Ver respostas individuais</summary>
-        <pre style="background: #f1f5f9; padding: 10px; border-radius: 4px; font-size: 12px; margin-top: 8px;">
+        <summary style="cursor: pointer; color: #0a9cc0; font-weight: bold;">Ver respostas individuais</summary>
+        <pre style="background: #e6eff3; padding: 10px; border-radius: 4px; font-size: 12px; margin-top: 8px;">
 ${JSON.stringify(data.answers, null, 2)}
         </pre>
       </details>

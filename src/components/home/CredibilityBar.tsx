@@ -9,10 +9,10 @@ export const CredibilityBar: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
           {/* Item 1: Desde 2019 */}
           <div className="pt-6 md:pt-0 px-4 flex flex-col items-center">
-            <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 flex items-center justify-center mb-3">
+            <div className="w-12 h-12 rounded-2xl bg-primary-500/10 border border-primary-400/20 text-primary-300 flex items-center justify-center mb-3">
               <Calendar className="w-6 h-6" />
             </div>
-            <div className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-white mb-1">
+            <div className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-white mb-1">
               Desde {siteConfig.sinceYear}
             </div>
             <p className="text-xs sm:text-sm text-secondary-300 max-w-xs">
@@ -22,7 +22,7 @@ export const CredibilityBar: React.FC = () => {
 
           {/* Item 2: Alunos em vários estados e exterior */}
           <div className="pt-6 md:pt-0 px-4 flex flex-col items-center">
-            <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 flex items-center justify-center mb-3">
+            <div className="w-12 h-12 rounded-2xl bg-primary-500/10 border border-primary-400/20 text-primary-300 flex items-center justify-center mb-3">
               <Globe2 className="w-6 h-6" />
             </div>
             <div className="text-2xl sm:text-3xl font-black text-white mb-1">
@@ -35,7 +35,7 @@ export const CredibilityBar: React.FC = () => {
 
           {/* Item 3: Presencial SBC & Condomínios */}
           <div className="pt-6 md:pt-0 px-4 flex flex-col items-center">
-            <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 flex items-center justify-center mb-3">
+            <div className="w-12 h-12 rounded-2xl bg-primary-500/10 border border-primary-400/20 text-primary-300 flex items-center justify-center mb-3">
               <HeartHandshake className="w-6 h-6" />
             </div>
             <div className="text-2xl sm:text-3xl font-black text-white mb-1">

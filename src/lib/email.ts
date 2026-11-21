@@ -14,8 +14,8 @@ export async function sendLeadEmail(lead: LeadFormData, options?: { subject?: st
   const defaultSubject = options?.subject || `[Site] Novo interessado – ${lead.language} – ${audienceLabel}`;
 
   const htmlContent = `
-    <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #1e293b; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-      <div style="background-color: #0891b2; color: #ffffff; padding: 16px; border-radius: 6px; text-align: center;">
+    <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #2f4f60; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #cddde5; border-radius: 8px;">
+      <div style="background-color: #0a9cc0; color: #ffffff; padding: 16px; border-radius: 6px; text-align: center;">
         <h2 style="margin: 0;">Novo Lead Recebido - Snowfield Languages</h2>
       </div>
 
@@ -39,13 +39,13 @@ export async function sendLeadEmail(lead: LeadFormData, options?: { subject?: st
         ${lead.message ? `<p><strong>Mensagem Adicional:</strong> ${escapeHtml(lead.message)}</p>` : ''}
         
         ${options?.testDetails ? `
-          <div style="margin-top: 15px; padding: 12px; background: #f0fdfa; border-left: 4px solid #0891b2;">
+          <div style="margin-top: 15px; padding: 12px; background: #ebfbfe; border-left: 4px solid #0a9cc0;">
             <h4 style="margin: 0 0 8px 0; color: #0f766e;">Resultado do Teste de Nível:</h4>
             ${options.testDetails}
           </div>
         ` : ''}
 
-        <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;" />
+        <hr style="border: none; border-top: 1px solid #cddde5; margin: 20px 0;" />
         <h4 style="margin-bottom: 8px; color: #64748b;">Origem e Rastreamento:</h4>
         <p style="font-size: 13px; color: #64748b;"><strong>Página de Origem:</strong> ${escapeHtml(lead.pageSource || 'Direto')}</p>
         ${lead.utmParams && Object.keys(lead.utmParams).length > 0 ? `
@@ -53,7 +53,7 @@ export async function sendLeadEmail(lead: LeadFormData, options?: { subject?: st
         ` : ''}
       </div>
 
-      <div style="font-size: 12px; color: #94a3b8; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 12px;">
+      <div style="font-size: 12px; color: #94a3b8; text-align: center; border-top: 1px solid #cddde5; padding-top: 12px;">
         Notificação automática gerada pelo site Snowfield Languages.
       </div>
     </div>

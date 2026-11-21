@@ -34,7 +34,7 @@ export default function InglesRegularPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5 text-primary-600" />
             <span>Curso Principal da Snowfield</span>
           </div>
@@ -59,7 +59,7 @@ export default function InglesRegularPage() {
               href="/teste-de-nivel"
               className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-cyan-300" />
+              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Testar meu nível de inglês</span>
             </Link>
           </div>
@@ -78,7 +78,7 @@ export default function InglesRegularPage() {
           </div>
 
           <div className="p-8 rounded-3xl bg-secondary-50 border border-secondary-200">
-            <div className="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-800 flex items-center justify-center mb-5">
+            <div className="w-12 h-12 rounded-2xl bg-primary-100 text-primary-800 flex items-center justify-center mb-5">
               <Clock className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-bold text-secondary-900 mb-2">Carga Horária & Ritmo</h3>
@@ -99,13 +99,13 @@ export default function InglesRegularPage() {
         </div>
 
         {/* Benefícios */}
-        <div className="max-w-4xl mx-auto mb-20 bg-cyan-50/50 rounded-3xl p-8 sm:p-12 border border-cyan-200/80">
+        <div className="max-w-4xl mx-auto mb-20 bg-primary-50/50 rounded-3xl p-8 sm:p-12 border border-primary-200/80">
           <h2 className="text-2xl font-extrabold text-secondary-900 mb-6 text-center">
             O que você recebe no programa de Inglês Regular:
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {benefits.map((b, i) => (
-              <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-cyan-100 shadow-sm">
+              <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-primary-100 shadow-sm">
                 <CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
                 <span className="text-sm font-medium text-secondary-800">{b}</span>
               </div>

@@ -225,16 +225,16 @@ export const LevelTestWizard: React.FC = () => {
 
           <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-primary-900 via-secondary-900 to-primary-950 text-white shadow-xl relative overflow-hidden">
             <div className="relative z-10 space-y-2">
-              <span className="text-cyan-300 text-sm font-semibold uppercase tracking-widest">
+              <span className="text-primary-300 text-sm font-semibold uppercase tracking-widest">
                 Seu Nível Estimado no Quadro Europeu (CEFR):
               </span>
-              <div className="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-cyan-100">
+              <div className="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-300 via-white to-primary-100">
                 {result.level}
               </div>
               <div className="text-lg font-bold text-secondary-200">
                 {result.title}
               </div>
-              <div className="text-xs text-cyan-200/80 pt-1">
+              <div className="text-xs text-primary-200/80 pt-1">
                 Pontuação: {scoreData.totalScore} de {totalQuestions} acertos ({Math.round((scoreData.totalScore / totalQuestions) * 100)}%)
               </div>
             </div>

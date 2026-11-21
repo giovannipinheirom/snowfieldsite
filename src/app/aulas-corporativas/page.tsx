@@ -44,18 +44,18 @@ export default function AulasCorporativasPage() {
   ];
 
   return (
-    <div className="bg-slate-50 py-14 sm:py-20">
+    <div className="bg-secondary-50 py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Topo Sóbrio B2B */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-200 text-slate-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-200 text-secondary-800 text-xs font-bold uppercase tracking-wider">
             <Building2 className="w-3.5 h-3.5 text-primary-700" />
             <span>Soluções Corporativas • In-Company & Online</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-secondary-900 tracking-tight">
             Treinamento de Idiomas para Empresas e Equipes de Alto Desempenho
           </h1>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="text-base sm:text-lg text-secondary-600 leading-relaxed">
             Formatos in-company presenciais em São Bernardo do Campo (SP) e online ao vivo para filiais em todo o Brasil. Alinhamento estratégico com os objetivos do seu negócio.
           </p>
 
@@ -64,7 +64,7 @@ export default function AulasCorporativasPage() {
               href={whatsappLink('Olá! Vim pelo site e quero saber sobre aulas corporativas para minha empresa.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all"
             >
               <MessageCircle className="w-5 h-5 text-emerald-400" />
               <span>Falar com o consultor corporativo</span>
@@ -74,26 +74,26 @@ export default function AulasCorporativasPage() {
 
         {/* Formatos de Atendimento */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-          <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
-            <span className="text-xs font-bold px-3 py-1 rounded-full bg-cyan-100 text-cyan-900 uppercase">
+          <div className="bg-white p-8 rounded-3xl border border-secondary-200 shadow-sm space-y-4">
+            <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary-100 text-primary-900 uppercase">
               Presencial em SBC
             </span>
-            <h3 className="text-2xl font-bold text-slate-900">
+            <h3 className="text-2xl font-bold text-secondary-900">
               In-Company na sua Empresa
             </h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm text-secondary-600 leading-relaxed">
               O instrutor vai até a sede da sua empresa em São Bernardo do Campo nos horários mais convenientes para o expediente (antes do início, almoço ou final da tarde).
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+          <div className="bg-white p-8 rounded-3xl border border-secondary-200 shadow-sm space-y-4">
             <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary-100 text-primary-900 uppercase">
               Nacional & Remoto
             </span>
-            <h3 className="text-2xl font-bold text-slate-900">
+            <h3 className="text-2xl font-bold text-secondary-900">
               Online ao Vivo para Filiais
             </h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm text-secondary-600 leading-relaxed">
               Equipes distribuídas geograficamente em salas virtuais interativas com relatórios de assiduidade e evolução compartilhados mensalmente com o RH.
             </p>
           </div>
@@ -102,25 +102,25 @@ export default function AulasCorporativasPage() {
         {/* 4 Objetivos Principais */}
         <div className="mb-20">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary-900">
               Foco nos Desafios Reais do Ambiente Corporativo
             </h2>
-            <p className="text-sm text-slate-600 mt-2">
+            <p className="text-sm text-secondary-600 mt-2">
               Não perdemos tempo com jargões ultrapassados: treinamos as situações reais da rotina corporativa:
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {corporateGoals.map((g, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+              <div key={idx} className="bg-white p-6 rounded-2xl border border-secondary-200 shadow-sm flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-secondary-100 flex items-center justify-center mb-5">
                     {g.icon}
                   </div>
-                  <h4 className="text-lg font-bold text-slate-900 mb-2">
+                  <h4 className="text-lg font-bold text-secondary-900 mb-2">
                     {g.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-secondary-600 leading-relaxed">
                     {g.desc}
                   </p>
                 </div>
@@ -132,10 +132,10 @@ export default function AulasCorporativasPage() {
         {/* Formulário Corporativo Dedicado */}
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+            <h2 className="text-2xl sm:text-3xl font-black text-secondary-900">
               Solicitar proposta corporativa
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+            <p className="text-xs sm:text-sm text-secondary-600 mt-1">
               Envie as informações da sua organização para desenharmos uma proposta customizada:
             </p>
           </div>

@@ -26,7 +26,7 @@ export default function SobrePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Topo Institucional */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <History className="w-3.5 h-3.5 text-primary-600" />
             <span>Nossa História e Valores</span>
           </div>
@@ -62,7 +62,7 @@ export default function SobrePage() {
           </div>
 
           <div className="bg-gradient-to-br from-secondary-900 to-primary-950 rounded-3xl p-8 sm:p-10 text-white shadow-xl space-y-6">
-            <h3 className="text-xl font-bold text-cyan-300">
+            <h3 className="text-xl font-bold text-primary-300">
               Histórico & Proposta da Escola
             </h3>
             <div className="space-y-4 text-xs sm:text-sm text-secondary-200 leading-relaxed">
@@ -70,7 +70,7 @@ export default function SobrePage() {
                 Nossa proposta se consolida nos pilares da empatia pedagógica, personalização dos planos de aula e no acompanhamento minucioso de cada fase do desenvolvimento verbal.
               </p>
               <div className="p-4 rounded-xl bg-white/10 border border-white/10 space-y-2">
-                <span className="text-xs font-mono font-bold text-cyan-300 uppercase block">
+                <span className="text-xs font-mono font-bold text-primary-300 uppercase block">
                   Informações complementares do histórico:
                 </span>
                 <p className="text-xs text-white/90">

@@ -22,7 +22,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: '#0891b2',
+  themeColor: '#0a9cc0',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -48,11 +48,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Snowfield Languages' }],
   creator: 'Snowfield Languages',
-  icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
-  },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
@@ -79,7 +74,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${plusJakarta.variable}`}>
-      <body className="font-sans antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900">
+      <body className="font-sans antialiased min-h-screen flex flex-col bg-secondary-50 text-secondary-900">
         <SeasonalBanner />
         <Header />
         <main className="flex-1">

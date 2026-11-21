@@ -26,32 +26,32 @@ export default function IntensivoViagensPage() {
     {
       title: '1. No Aeroporto & Imigração',
       desc: 'Check-in, despacho de bagagem, perguntas frequentes do agente de alfândega/imigração e como responder com tranquilidade.',
-      icon: <Luggage className="w-6 h-6 text-cyan-600" />,
+      icon: <Luggage className="w-6 h-6 text-primary-600" />,
     },
     {
       title: '2. Hotel & Hospedagem',
       desc: 'Como fazer check-in/out, pedir toalhas extras, relatar problemas no quarto, perguntar sobre café da manhã e passeios.',
-      icon: <Hotel className="w-6 h-6 text-cyan-600" />,
+      icon: <Hotel className="w-6 h-6 text-primary-600" />,
     },
     {
       title: '3. Restaurantes & Cafeterias',
       desc: 'Como ler o cardápio com segurança, pedir água sem gás, solicitar a conta (the check, please) e informar restrições alimentares.',
-      icon: <UtensilsCrossed className="w-6 h-6 text-cyan-600" />,
+      icon: <UtensilsCrossed className="w-6 h-6 text-primary-600" />,
     },
     {
       title: '4. Como se Locomover',
       desc: 'Comprar bilhetes de metrô e trem, pedir táxi ou Uber, pedir orientações na rua e não se perder em grandes cidades.',
-      icon: <MapPin className="w-6 h-6 text-cyan-600" />,
+      icon: <MapPin className="w-6 h-6 text-primary-600" />,
     },
     {
       title: '5. Compras & Lojas',
       desc: 'Tamanhos de roupas, pedir para experimentar no provador, perguntar preços, pedir descontos e efetuar pagamentos.',
-      icon: <Sparkles className="w-6 h-6 text-cyan-600" />,
+      icon: <Sparkles className="w-6 h-6 text-primary-600" />,
     },
     {
       title: '6. Farmácia & Emergências',
       desc: 'Como descrever sintomas simples (dor de cabeça, febre, mal-estar), comprar remédios e solicitar auxílio médico ou consular.',
-      icon: <AlertTriangle className="w-6 h-6 text-cyan-600" />,
+      icon: <AlertTriangle className="w-6 h-6 text-primary-600" />,
     },
   ];
 
@@ -59,7 +59,7 @@ export default function IntensivoViagensPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <Plane className="w-3.5 h-3.5 text-primary-600" />
             <span>Imersão Prática em 4 a 8 Semanas</span>
           </div>

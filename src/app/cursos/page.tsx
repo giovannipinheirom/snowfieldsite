@@ -25,7 +25,7 @@ export default function CursosCatalogPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <GraduationCap className="w-3.5 h-3.5 text-primary-600" />
             <span>Catálogo Acadêmico Completo</span>
           </div>
@@ -49,7 +49,7 @@ export default function CursosCatalogPage() {
                 key={course.id}
                 className={`rounded-3xl p-7 border flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl ${
                   course.highlight
-                    ? 'bg-gradient-to-b from-cyan-50/50 to-white border-primary-300 shadow-md ring-1 ring-primary-300'
+                    ? 'bg-gradient-to-b from-primary-50/50 to-white border-primary-300 shadow-md ring-1 ring-primary-300'
                     : 'bg-white border-secondary-200 shadow-sm'
                 }`}
               >
@@ -58,7 +58,7 @@ export default function CursosCatalogPage() {
                     <span className="text-xs font-bold px-3 py-1 rounded-full bg-secondary-100 text-secondary-700">
                       {course.language}
                     </span>
-                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-cyan-100 text-primary-800">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-primary-100 text-primary-800">
                       {course.format}
                     </span>
                   </div>

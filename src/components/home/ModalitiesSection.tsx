@@ -26,7 +26,7 @@ export const ModalitiesSection: React.FC = () => {
       primaryBg: 'bg-white',
     },
     {
-      icon: <Building className="w-8 h-8 text-cyan-600" />,
+      icon: <Building className="w-8 h-8 text-primary-600" />,
       title: 'Aulas em Condomínios',
       tag: 'São Bernardo do Campo',
       description: 'O professor vai até as áreas comuns do seu condomínio residencial. Segurança e comodidade máxima para famílias e crianças.',
@@ -37,7 +37,7 @@ export const ModalitiesSection: React.FC = () => {
       ],
       link: '/aulas-em-condominios',
       linkText: 'Quero no meu condomínio',
-      primaryBg: 'bg-cyan-50/50',
+      primaryBg: 'bg-primary-50/50',
       isPopular: true,
     },
     {

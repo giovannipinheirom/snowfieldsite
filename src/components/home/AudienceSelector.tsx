@@ -74,7 +74,7 @@ export const AudienceSelector: React.FC = () => {
         </div>
 
         {/* Card de Detalhes da Jornada Escolhida */}
-        <div className="max-w-3xl mx-auto bg-gradient-to-br from-secondary-50 to-cyan-50/40 rounded-3xl p-6 sm:p-10 border border-secondary-200/80 shadow-lg animate-in fade-in duration-200">
+        <div className="max-w-3xl mx-auto bg-gradient-to-br from-secondary-50 to-primary-50/40 rounded-3xl p-6 sm:p-10 border border-secondary-200/80 shadow-lg animate-in fade-in duration-200">
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-secondary-200 pb-4">
               <div>

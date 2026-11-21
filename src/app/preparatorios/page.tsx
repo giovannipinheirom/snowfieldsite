@@ -66,7 +66,7 @@ export default function PreparatoriosPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <Award className="w-3.5 h-3.5 text-primary-600" />
             <span>Certificações Internacionais de Proficiência</span>
           </div>
@@ -91,7 +91,7 @@ export default function PreparatoriosPage() {
               href="/teste-de-nivel"
               className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-cyan-300" />
+              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Avaliar meu nível atual primeiro</span>
             </Link>
           </div>

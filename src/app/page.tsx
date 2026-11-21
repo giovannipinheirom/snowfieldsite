@@ -28,7 +28,7 @@ export default function HomePage() {
     name: siteConfig.name,
     description: 'Escola de idiomas com aulas divertidas e personalizadas para alunos de 4 a 90 anos.',
     url: 'https://www.snowfieldlanguages.com.br',
-    logo: 'https://www.snowfieldlanguages.com.br/logo.svg',
+    logo: 'https://www.snowfieldlanguages.com.br/logo-badge.png',
     email: siteConfig.email,
     telephone: siteConfig.whatsapp.number,
     foundingDate: `${siteConfig.sinceYear}-01-01`,

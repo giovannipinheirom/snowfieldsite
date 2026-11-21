@@ -22,7 +22,7 @@ export default function PoliticaPrivacidadePage() {
         </Link>
 
         <div className="space-y-4 mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
             <ShieldCheck className="w-3.5 h-3.5 text-primary-600" />
             <span>LGPD Compliance (Lei nº 13.709/2018)</span>
           </div>

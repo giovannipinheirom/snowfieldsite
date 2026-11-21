@@ -19,12 +19,12 @@ export const FlashcardInteraction: React.FC<FlashcardInteractionProps> = ({ phra
   return (
     <div className="bg-gradient-to-br from-primary-900 to-secondary-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl">
       <div className="flex items-center gap-2 mb-2">
-        <Sparkles className="w-5 h-5 text-cyan-300" />
+        <Sparkles className="w-5 h-5 text-primary-300" />
         <h3 className="text-lg sm:text-xl font-bold text-white">
           Mini-Interação: Frases Úteis em {languageName}
         </h3>
       </div>
-      <p className="text-xs sm:text-sm text-cyan-100/80 mb-6">
+      <p className="text-xs sm:text-sm text-primary-100/80 mb-6">
         Clique nos cards abaixo para testar sua compreensão e revelar a tradução em português:
       </p>
 
@@ -39,7 +39,7 @@ export const FlashcardInteraction: React.FC<FlashcardInteractionProps> = ({ phra
             >
               <div>
                 {item.hint && (
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-cyan-300 block mb-1">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-primary-300 block mb-1">
                     {item.hint}
                   </span>
                 )}
@@ -54,7 +54,7 @@ export const FlashcardInteraction: React.FC<FlashcardInteractionProps> = ({ phra
                     ➔ {item.translation}
                   </div>
                 ) : (
-                  <div className="text-xs text-white/60 flex items-center gap-1.5 group-hover:text-cyan-200">
+                  <div className="text-xs text-white/60 flex items-center gap-1.5 group-hover:text-primary-200">
                     <Eye className="w-4 h-4" />
                     <span>Toque para ver a tradução</span>
                   </div>
