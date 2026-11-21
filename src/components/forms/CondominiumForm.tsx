@@ -221,7 +221,7 @@ export const CondominiumForm: React.FC<{ className?: string }> = ({ className = 
           <button
             type="submit"
             disabled={loading}
-            className="w-full inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-primary-600/25 transition-all text-base disabled:opacity-70"
+            className="w-full inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all text-base disabled:opacity-70"
           >
             {loading ? (
               <>

@@ -11,14 +11,11 @@ export const TeamSection: React.FC<{ showLink?: boolean; id?: string }> = ({ sho
     <section id={id} className="py-16 sm:py-24 bg-white border-b border-secondary-100 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-primary-600 block mb-2">
-            Quem faz a escola
-          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary-900 tracking-tight">
-            Gente de verdade, com histórias de verdade
+            Quem faz a escola
           </h2>
           <p className="mt-3 text-sm sm:text-base text-secondary-600">
-            Karaokê, trilhas, jogos inventados, um gato chamado Cheddar… Cada professora traz o que ama para dentro da aula.
+            Cada professora leva para a aula o que gosta fora dela.
           </p>
         </div>
 
@@ -26,33 +23,27 @@ export const TeamSection: React.FC<{ showLink?: boolean; id?: string }> = ({ sho
           {teamData.map((m, i) => (
             <article key={m.slug} className="group relative">
               <div
-                className="bg-white p-3 pb-4 rounded-lg shadow-xl shadow-secondary-900/10 border border-secondary-100 transition-transform duration-300 group-hover:rotate-0 group-hover:-translate-y-1"
+                className="bg-white p-3 pb-4 rounded-lg shadow-xl border border-secondary-100 transition-transform duration-300 group-hover:rotate-0 group-"
                 style={{ transform: `rotate(${rotations[i % rotations.length]})` }}
               >
                 <div className="relative aspect-square rounded overflow-hidden bg-secondary-100">
                   <Image
                     src={m.photo}
-                    alt={`${m.name} — ${m.role} da Snowfield Languages`}
+                    alt={`${m.name}, ${m.role.toLowerCase()} da Snowfield Languages`}
                     fill
                     sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"
                     className="object-cover"
                   />
-                  <span className="absolute top-3 right-3 bg-white/95 rounded-full px-3 py-1 text-xs font-semibold text-secondary-700 shadow">
-                    {m.funFact}
-                  </span>
                 </div>
                 <div className="pt-4 px-1 space-y-2">
                   <div className="flex items-baseline justify-between gap-2">
                     <h3 className="font-hand text-3xl font-bold text-secondary-900 leading-none">{m.name}</h3>
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-secondary-500">{m.role}</span>
+                    <span className="font-hand text-lg text-primary-600 text-right">{m.funFact}</span>
                   </div>
+                  {m.languages.length === 0 && <div className="text-sm font-semibold text-secondary-800">{m.role}</div>}
                   {m.languages.length > 0 && (
-                    <div className="flex flex-wrap gap-1.5">
-                      {m.languages.map((l) => (
-                        <span key={l} className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-primary-50 text-primary-700 border border-primary-100">
-                          {l}
-                        </span>
-                      ))}
+                    <div className="text-sm font-semibold text-secondary-800">
+                      {m.role === 'Professora' ? 'Ensina ' : ''}{m.languages.join(', ').replace(/, ([^,]*)$/, ' e $1')}
                     </div>
                   )}
                   <p className="text-sm text-secondary-600 leading-relaxed">{m.bio}</p>

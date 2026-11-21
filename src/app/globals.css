@@ -89,30 +89,6 @@ body {
   font-family: var(--font-hand), cursive;
 }
 
-/* Animações suaves da hero */
-@keyframes sf-float {
-  0%, 100% { transform: translateY(0) rotate(var(--sf-rot, 0deg)); }
-  50% { transform: translateY(-8px) rotate(var(--sf-rot, 0deg)); }
-}
-.sf-float {
-  animation: sf-float 6s ease-in-out infinite;
-}
-.sf-float-delay {
-  animation: sf-float 7s ease-in-out 1.5s infinite;
-}
-@keyframes sf-spin-slow {
-  to { transform: rotate(360deg); }
-}
-.sf-spin-slow {
-  animation: sf-spin-slow 24s linear infinite;
-}
-@keyframes sf-marquee {
-  to { transform: translateX(-50%); }
-}
-.sf-marquee {
-  animation: sf-marquee 30s linear infinite;
-}
-
 /* Foco visível acessível */
 :focus-visible {
   outline: 2px solid var(--color-primary-500);

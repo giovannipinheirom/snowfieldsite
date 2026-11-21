@@ -15,30 +15,30 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Inglês para Empresas & Aulas Corporativas em SBC e Online | Snowfield',
+  title: 'Inglês para empresas em SBC e online | Snowfield',
   description: 'Treinamento de idiomas in-company em São Bernardo do Campo e online ao vivo para executivos e equipes corporativas. Foco em negócios, reuniões e e-mails.',
 };
 
 export default function AulasCorporativasPage() {
   const corporateGoals = [
     {
-      title: 'Reuniões & Conferências Internacionais',
-      desc: 'Segurança verbal para expor argumentos, debater estratégias e interagir com parceiros estrangeiros sem hesitação.',
+      title: 'Reuniões',
+      desc: 'Simulamos reuniões em inglês para o time ganhar segurança na hora de argumentar e discordar.',
       icon: <Presentation className="w-6 h-6 text-primary-600" />,
     },
     {
-      title: 'Redação de E-mails & Propostas Comerciais',
-      desc: 'Domínio do tom formal adequado (business etiquette), clareza na escrita e vocabulário técnico corporativo.',
+      title: 'E-mails e propostas',
+      desc: 'O tom certo para cada situação e o vocabulário da área de vocês.',
       icon: <Mail className="w-6 h-6 text-primary-600" />,
     },
     {
-      title: 'Apresentações & Pitches Globais',
-      desc: 'Treinamento de retórica e resposta a perguntas difíceis durante apresentações de resultados e lançamentos.',
+      title: 'Apresentações',
+      desc: 'Treino para apresentar resultados e responder perguntas sem travar.',
       icon: <BarChart3 className="w-6 h-6 text-primary-600" />,
     },
     {
-      title: 'Viagens Corporativas & Negociações',
-      desc: 'Autonomia para feiras internacionais, visitas a fábricas e matrizes no exterior e jantares de relacionamento.',
+      title: 'Viagens a trabalho',
+      desc: 'Feiras, visitas à matriz e aquele jantar com o cliente.',
       icon: <Plane className="w-6 h-6 text-primary-600" />,
     },
   ];
@@ -48,15 +48,11 @@ export default function AulasCorporativasPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Topo Sóbrio B2B */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-200 text-secondary-800 text-xs font-bold uppercase tracking-wider">
-            <Building2 className="w-3.5 h-3.5 text-primary-700" />
-            <span>Soluções Corporativas • In-Company & Online</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-black text-secondary-900 tracking-tight">
-            Treinamento de Idiomas para Empresas e Equipes de Alto Desempenho
+            Idiomas para a sua equipe
           </h1>
           <p className="text-base sm:text-lg text-secondary-600 leading-relaxed">
-            Formatos in-company presenciais em São Bernardo do Campo (SP) e online ao vivo para filiais em todo o Brasil. Alinhamento estratégico com os objetivos do seu negócio.
+            A Snowfield começou em 2019 dando aula dentro de empresas como Serasa Experian e Banco Volkswagen. Hoje atendemos times presenciais em São Bernardo do Campo e online no Brasil inteiro.
           </p>
 
           <div className="pt-2">
@@ -67,7 +63,7 @@ export default function AulasCorporativasPage() {
               className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all"
             >
               <MessageCircle className="w-5 h-5 text-emerald-400" />
-              <span>Falar com o consultor corporativo</span>
+              <span>Falar com a gente no WhatsApp</span>
             </a>
           </div>
         </div>
@@ -75,11 +71,11 @@ export default function AulasCorporativasPage() {
         {/* Formatos de Atendimento */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-3xl border border-secondary-200 shadow-sm space-y-4">
-            <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary-100 text-primary-900 uppercase">
+            <span className="text-sm text-secondary-500">
               Presencial em SBC
             </span>
             <h3 className="text-2xl font-bold text-secondary-900">
-              In-Company na sua Empresa
+              In-Company na sua empresa
             </h3>
             <p className="text-sm text-secondary-600 leading-relaxed">
               O instrutor vai até a sede da sua empresa em São Bernardo do Campo nos horários mais convenientes para o expediente (antes do início, almoço ou final da tarde).
@@ -87,11 +83,11 @@ export default function AulasCorporativasPage() {
           </div>
 
           <div className="bg-white p-8 rounded-3xl border border-secondary-200 shadow-sm space-y-4">
-            <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary-100 text-primary-900 uppercase">
+            <span className="text-sm text-secondary-500">
               Nacional & Remoto
             </span>
             <h3 className="text-2xl font-bold text-secondary-900">
-              Online ao Vivo para Filiais
+              Online ao vivo para filiais
             </h3>
             <p className="text-sm text-secondary-600 leading-relaxed">
               Equipes distribuídas geograficamente em salas virtuais interativas com relatórios de assiduidade e evolução compartilhados mensalmente com o RH.
@@ -103,10 +99,10 @@ export default function AulasCorporativasPage() {
         <div className="mb-20">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary-900">
-              Foco nos Desafios Reais do Ambiente Corporativo
+              O que treinamos
             </h2>
             <p className="text-sm text-secondary-600 mt-2">
-              Não perdemos tempo com jargões ultrapassados: treinamos as situações reais da rotina corporativa:
+              Os alunos criam case studies e action plans que depois levam para as reuniões de verdade.
             </p>
           </div>
 
@@ -114,9 +110,6 @@ export default function AulasCorporativasPage() {
             {corporateGoals.map((g, idx) => (
               <div key={idx} className="bg-white p-6 rounded-2xl border border-secondary-200 shadow-sm flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-secondary-100 flex items-center justify-center mb-5">
-                    {g.icon}
-                  </div>
                   <h4 className="text-lg font-bold text-secondary-900 mb-2">
                     {g.title}
                   </h4>

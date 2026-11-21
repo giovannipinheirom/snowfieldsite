@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { 
   Home, 
   GraduationCap, 
-  Sparkles, 
+  ClipboardCheck,
   Phone, 
   Search, 
   ArrowRight 
@@ -11,12 +11,12 @@ import {
 
 export default function NotFound() {
   const quickLinks = [
-    { label: 'Página Inicial (Home)', href: '/', icon: <Home className="w-4 h-4 text-primary-600" /> },
-    { label: 'Fazer Teste de Nível', href: '/teste-de-nivel', icon: <Sparkles className="w-4 h-4 text-primary-600" /> },
-    { label: 'Cursos & Idiomas', href: '/cursos', icon: <GraduationCap className="w-4 h-4 text-primary-600" /> },
-    { label: 'Aulas em Condomínios', href: '/aulas-em-condominios', icon: <Home className="w-4 h-4 text-primary-600" /> },
-    { label: 'Aulas Corporativas', href: '/aulas-corporativas', icon: <GraduationCap className="w-4 h-4 text-primary-600" /> },
-    { label: 'Fale Conosco', href: '/contato', icon: <Phone className="w-4 h-4 text-primary-600" /> },
+    { label: 'Página inicial (home)', href: '/', icon: <Home className="w-4 h-4 text-primary-600" /> },
+    { label: 'Fazer teste de nível', href: '/teste-de-nivel', icon: <ClipboardCheck className="w-4 h-4 text-primary-600" /> },
+    { label: 'Cursos & idiomas', href: '/cursos', icon: <GraduationCap className="w-4 h-4 text-primary-600" /> },
+    { label: 'Aulas em condomínios', href: '/aulas-em-condominios', icon: <Home className="w-4 h-4 text-primary-600" /> },
+    { label: 'Aulas corporativas', href: '/aulas-corporativas', icon: <GraduationCap className="w-4 h-4 text-primary-600" /> },
+    { label: 'Fale conosco', href: '/contato', icon: <Phone className="w-4 h-4 text-primary-600" /> },
   ];
 
   return (

@@ -35,14 +35,11 @@ export const FAQSection: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-primary-600 block mb-2">
-            Tire Suas Dúvidas
-          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary-900 tracking-tight">
-            Perguntas Frequentes
+            Perguntas frequentes
           </h2>
           <p className="mt-3 text-sm sm:text-base text-secondary-600">
-            Respostas transparentes sobre modalidades, turmas, metodologia e atendimento.
+            O que mais perguntam pra gente no WhatsApp.
           </p>
         </div>
 
@@ -69,7 +66,7 @@ export const FAQSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 text-xs sm:text-sm text-secondary-600 leading-relaxed border-t border-secondary-100 pt-4 animate-in fade-in duration-150">
+                  <div className="px-5 pb-6 sm:px-6 text-xs sm:text-sm text-secondary-600 leading-relaxed border-t border-secondary-100 pt-4">
                     {item.answer}
                   </div>
                 )}

@@ -9,7 +9,6 @@ import {
   CheckCircle2, 
   Clock, 
   FileText, 
-  Sparkles, 
   MessageCircle, 
   ArrowRight 
 } from 'lucide-react';
@@ -66,15 +65,11 @@ export default function PreparatoriosPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
-            <Award className="w-3.5 h-3.5 text-primary-600" />
-            <span>Certificações Internacionais de Proficiência</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-black text-secondary-900 tracking-tight">
             Preparatório para TOEFL, Cambridge e Duolingo English Test
           </h1>
           <p className="text-base sm:text-lg text-secondary-600 leading-relaxed">
-            Conquiste a pontuação necessária para seu intercâmbio, mestrado, doutorado ou visto de trabalho no exterior com acompanhamento focado e simulados.
+            Para quem precisa de nota para intercâmbio, pós-graduação ou visto de trabalho. Treinamos com simulados no formato de cada prova.
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -91,7 +86,6 @@ export default function PreparatoriosPage() {
               href="/teste-de-nivel"
               className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Avaliar meu nível atual primeiro</span>
             </Link>
           </div>
@@ -106,7 +100,7 @@ export default function PreparatoriosPage() {
               className="p-8 sm:p-10 rounded-3xl bg-secondary-50/70 border border-secondary-200 shadow-sm grid grid-cols-1 lg:grid-cols-3 gap-8 items-center"
             >
               <div className="lg:col-span-2 space-y-4">
-                <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary-100 text-primary-800 uppercase tracking-wide">
+                <span className="text-sm text-secondary-500">
                   {exam.tag}
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-black text-secondary-900">
@@ -158,7 +152,7 @@ export default function PreparatoriosPage() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-secondary-900">
-              Planeje sua Preparação Conosco
+              Planeje sua preparação conosco
             </h3>
             <p className="text-xs sm:text-sm text-secondary-600 mt-1">
               Informe a prova e a data prevista do exame para elaborarmos seu plano de estudos:

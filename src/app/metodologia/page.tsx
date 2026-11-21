@@ -7,7 +7,6 @@ import { PlaceholderBadge } from '@/components/ui/PlaceholderBadge';
 import { 
   Smile, 
   Target, 
-  Sparkles, 
   Compass, 
   LineChart, 
   MessageCircle, 
@@ -18,30 +17,30 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Metodologia | Aulas Divertidas e Personalizadas',
+  title: 'Metodologia | aulas divertidas e personalizadas',
   description: 'Descubra como funcionam as aulas de idiomas da Snowfield Languages: método ativo, diagnóstico inicial, sem decoreba e acompanhamento individual.',
 };
 
 export default function MetodologiaPage() {
   const pillars = [
     {
-      title: 'Aulas Divertidas sem Fórmulas Engessadas',
-      description: 'Acreditamos que a retenção neurológica de um novo idioma é exponencialmente maior quando o aprendizado é agradável e sem estresse. Em vez de regras isoladas, usamos diálogos de interesse do aluno, storytelling, podcasts e jogos comunicativos.',
+      title: 'Aula boa é aula leve',
+      description: 'A gente aprende melhor quando está à vontade. Em vez de regra solta, usamos conversas sobre o que interessa ao aluno, histórias, podcasts, música e jogos.',
       icon: <Smile className="w-7 h-7 text-primary-600" />,
     },
     {
-      title: 'Personalização Extrema para Cada Aluno',
-      description: 'Nenhum ser humano aprende no mesmo ritmo nem pelos mesmos motivos. Se você precisa de inglês para viagens em 2 meses, seu curso não será igual ao de quem está se preparando para o TOEFL ou de uma criança em fase de alfabetização bilíngue.',
+      title: 'Cada aluno tem a sua aula',
+      description: 'Ninguém aprende no mesmo ritmo nem pelos mesmos motivos. Quem viaja em dois meses não tem a mesma aula de quem vai prestar TOEFL ou de uma criança de seis anos.',
       icon: <Target className="w-7 h-7 text-primary-600" />,
     },
     {
-      title: 'A Primeira Aula Diagnóstica',
-      description: 'Na primeira sessão, não aplicamos uma prova intimidadora. Realizamos um alinhamento interativo para entender seus bloqueios, rotina, preferências de aprendizado e seu nível real de comunicação espontânea.',
+      title: 'A primeira aula é uma conversa',
+      description: 'Nada de prova no primeiro dia. A gente conversa para entender sua rotina, o que te trava e até onde você já consegue se comunicar.',
       icon: <Compass className="w-7 h-7 text-primary-600" />,
     },
     {
-      title: 'Acompanhamento Contínuo e Feedback Transparente',
-      description: 'Você não espera o final do semestre para saber se evoluiu. A cada ciclo de encontros, o professor avalia expansão de vocabulário, clareza fonética e fluência, compartilhando relatórios periódicos de progresso.',
+      title: 'Você sabe como está indo',
+      description: 'Não precisa esperar o fim do semestre. A professora vai te contando o que melhorou e no que ainda vale insistir.',
       icon: <LineChart className="w-7 h-7 text-primary-600" />,
     },
   ];
@@ -51,15 +50,11 @@ export default function MetodologiaPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-primary-600" />
-            <span>Abordagem Pedagógica Snowfield</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-black text-secondary-900 tracking-tight">
-            Como funcionam as nossas aulas divertidas e personalizadas
+            Como a gente ensina
           </h1>
           <p className="text-base sm:text-lg text-secondary-600 leading-relaxed">
-            Eliminamos o medo de falar desde o primeiro dia. Nossa metodologia ativa coloca você no centro do processo, seja em São Bernardo do Campo ou online no mundo inteiro.
+            Depois de anos coordenando escolas de idiomas, percebemos que o livro e a gramática decorada não funcionam para todo mundo. Aqui a aula começa pela sua história.
           </p>
         </div>
 
@@ -70,9 +65,6 @@ export default function MetodologiaPage() {
               key={idx}
               className="p-8 rounded-3xl bg-secondary-50/70 border border-secondary-200/80 hover:border-primary-300 transition-all shadow-sm"
             >
-              <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 border border-secondary-100">
-                {item.icon}
-              </div>
               <h3 className="text-xl font-bold text-secondary-900 mb-3">
                 {item.title}
               </h3>
@@ -84,20 +76,17 @@ export default function MetodologiaPage() {
         </div>
 
         {/* Linha do Tempo: A Jornada do Aluno */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary-950 via-secondary-900 to-primary-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl mb-20">
+        <div className="max-w-4xl mx-auto bg-secondary-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl mb-20">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-black text-white">
-              A Jornada Passo a Passo na Snowfield
+              Do primeiro contato até a fluência
             </h2>
-            <p className="text-xs sm:text-sm text-primary-200 mt-2">
-              Da primeira conversa à conquista da fluência espontânea
-            </p>
           </div>
 
           <div className="space-y-8 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-primary-500/30">
             <div className="relative pl-12">
               <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-primary-300">1. Alinhamento Inicial e Teste de Nível</h4>
+              <h4 className="text-lg font-bold text-primary-300">1. Alinhamento inicial e teste de nível</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 Você faz nosso teste online gratuito ou agenda uma conversa rápida para mapearmos seus objetivos prioritários.
               </p>
@@ -105,7 +94,7 @@ export default function MetodologiaPage() {
 
             <div className="relative pl-12">
               <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-primary-300">2. Planejamento Sob Medida</h4>
+              <h4 className="text-lg font-bold text-primary-300">2. Planejamento sob medida</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 O professor desenha a trilha pedagógica: escolha do formato (online ou presencial em SBC), temas de interesse e frequência ideal.
               </p>
@@ -113,7 +102,7 @@ export default function MetodologiaPage() {
 
             <div className="relative pl-12">
               <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-primary-300">3. Aulas Comunicativas e Imersão Prática</h4>
+              <h4 className="text-lg font-bold text-primary-300">3. Aulas comunicativas e imersão prática</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 Conversação ativa desde o primeiro encontro. Prática constante com situações do cotidiano e simulações do mundo real.
               </p>
@@ -121,7 +110,7 @@ export default function MetodologiaPage() {
 
             <div className="relative pl-12">
               <span className="absolute left-3 -translate-x-1/2 top-1 w-5 h-5 rounded-full bg-primary-400 border-4 border-secondary-900" />
-              <h4 className="text-lg font-bold text-primary-300">4. Avaliação Contínua e Celebração de Resultados</h4>
+              <h4 className="text-lg font-bold text-primary-300">4. Avaliação contínua e celebração de resultados</h4>
               <p className="text-xs sm:text-sm text-secondary-200 mt-1 leading-relaxed">
                 Acompanhamento periódico de segurança verbal, com relatórios detalhados para o aluno (e para os pais ou empresas).
               </p>
@@ -151,7 +140,6 @@ export default function MetodologiaPage() {
               href="/teste-de-nivel"
               className="inline-flex items-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Fazer teste de nível online</span>
             </Link>
           </div>

@@ -1,7 +1,7 @@
 import { TestimonialItem } from '@/types';
 
 /**
- * DEPOIMENTOS REAIS — fonte: CV institucional Snowfield 2026 ("Os Protagonistas").
+ * DEPOIMENTOS REAIS. Fonte: CV institucional Snowfield 2026 ("Os Protagonistas").
  * NUNCA inventar depoimentos fictícios.
  */
 export const testimonialsData: TestimonialItem[] = [

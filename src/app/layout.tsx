@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://www.snowfieldlanguages.com.br',
     siteName: 'Snowfield Languages',
-    title: 'Snowfield Languages | Aulas Divertidas e Personalizadas',
+    title: 'Snowfield Languages | aulas divertidas e personalizadas',
     description: 'Aulas online para todo o Brasil e o mundo, e presenciais em condomínios e empresas em São Bernardo do Campo. De 4 a 90 anos.',
   },
   twitter: {

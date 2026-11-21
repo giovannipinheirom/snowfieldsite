@@ -77,7 +77,7 @@ export const CookieBanner: React.FC = () => {
 
       {/* Banner visual */}
       {showBanner && (
-        <div className="fixed bottom-0 inset-x-0 z-50 p-4 bg-white/95 backdrop-blur-md border-t border-secondary-200 shadow-2xl animate-in slide-in-from-bottom duration-300">
+        <div className="fixed bottom-0 inset-x-0 z-50 p-4 bg-white/95 backdrop-blur-md border-t border-secondary-200 shadow-2xl">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="flex items-start gap-3">
               <ShieldCheck className="w-6 h-6 text-primary-600 shrink-0 mt-0.5" />

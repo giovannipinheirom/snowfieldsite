@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { UsefulPhrase } from '@/types';
-import { Eye, EyeOff, Sparkles, Volume2 } from 'lucide-react';
+import { Eye, EyeOff, Volume2 } from 'lucide-react';
 
 interface FlashcardInteractionProps {
   phrases: UsefulPhrase[];
@@ -17,9 +17,8 @@ export const FlashcardInteraction: React.FC<FlashcardInteractionProps> = ({ phra
   };
 
   return (
-    <div className="bg-gradient-to-br from-primary-900 to-secondary-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl">
+    <div className="bg-secondary-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl">
       <div className="flex items-center gap-2 mb-2">
-        <Sparkles className="w-5 h-5 text-primary-300" />
         <h3 className="text-lg sm:text-xl font-bold text-white">
           Mini-Interação: Frases Úteis em {languageName}
         </h3>
@@ -50,7 +49,7 @@ export const FlashcardInteraction: React.FC<FlashcardInteractionProps> = ({ phra
 
               <div className="pt-3 border-t border-white/10 flex items-center justify-between">
                 {isRevealed ? (
-                  <div className="text-sm font-semibold text-emerald-300 animate-in fade-in duration-150">
+                  <div className="text-sm font-semibold text-emerald-300">
                     ➔ {item.translation}
                   </div>
                 ) : (

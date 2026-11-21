@@ -54,16 +54,13 @@ export const FloatingWhatsApp: React.FC = () => {
         rel="noopener noreferrer"
         onClick={handleClick}
         aria-label="Falar com a Snowfield Languages no WhatsApp"
-        className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+        className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-emerald-300"
       >
         <MessageCircle className="w-8 h-8 fill-white/20" />
-        {/* Ponto indicador de online */}
-        <span className="absolute top-1 right-1 w-3.5 h-3.5 bg-emerald-300 border-2 border-white rounded-full animate-ping" />
-        <span className="absolute top-1 right-1 w-3.5 h-3.5 bg-emerald-200 border-2 border-white rounded-full" />
       </a>
       
       {/* Tooltip no desktop */}
-      <span className="hidden md:group-hover:block absolute right-20 bg-secondary-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap animate-in fade-in slide-in-from-right-2 duration-150">
+      <span className="hidden md:group-hover:block absolute right-20 bg-secondary-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap">
         Fale conosco no WhatsApp
       </span>
     </div>

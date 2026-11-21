@@ -6,7 +6,7 @@ export const languagesData: LanguageItem[] = [
     slug: 'ingles',
     name: 'Inglês',
     badge: 'Mais procurado',
-    shortDescription: 'Do básico ao avançado com fluência prática para o dia a dia, viagens, carreira e certificações.',
+    shortDescription: 'Do básico ao avançado, para conversar no dia a dia, viajar, trabalhar ou fazer prova.',
     longDescription: 'O programa de Inglês da Snowfield Languages foi concebido para eliminar o bloqueio na fala. Em vez de listas infinitas de gramática descontextualizada, cada encontro coloca você em situações comunicativas reais desde o primeiro dia.',
     targetAudience: 'Crianças a partir de 4 anos, adolescentes em idade escolar, vestibulandos, adultos com foco em carreira ou viagens, e profissionais seniores até 90 anos.',
     typicalActivities: [
@@ -18,27 +18,27 @@ export const languagesData: LanguageItem[] = [
     levels: [
       {
         level: 'A1',
-        title: 'Iniciante (Starter)',
+        title: 'Iniciante (starter)',
         whatYouLearn: 'Cumprimentos, apresentações pessoais, números, rotinas simples e vocabulário imediato para sobrevivência.',
       },
       {
         level: 'A2',
-        title: 'Básico (Elementary)',
+        title: 'Básico (elementary)',
         whatYouLearn: 'Falar sobre passado e planos futuros, fazer compras, dar direções e descrever experiências simples.',
       },
       {
         level: 'B1',
-        title: 'Intermediário (Intermediate)',
+        title: 'Intermediário (intermediate)',
         whatYouLearn: 'Expressar opiniões fundamentadas, lidar com viagens no exterior e participar de reuniões de trabalho cotidianas.',
       },
       {
         level: 'B2',
-        title: 'Independente (Upper Intermediate)',
+        title: 'Independente (upper intermediate)',
         whatYouLearn: 'Debater temas complexos, defender pontos de vista com nuances e produzir textos claros e detalhados.',
       },
       {
         level: 'C1',
-        title: 'Avançado (Proficient)',
+        title: 'Avançado (proficient)',
         whatYouLearn: 'Comunicação fluida e espontânea em ambientes acadêmicos e executivos de alto nível, com vocabulário idiomático refinado.',
       },
     ],
@@ -75,7 +75,7 @@ export const languagesData: LanguageItem[] = [
     slug: 'espanhol',
     name: 'Espanhol',
     badge: 'Comunicação Ibero-Americana',
-    shortDescription: 'Supere o "portunhol" e desenvolva fluência verdadeira para conexões latinas, negócios e lazer.',
+    shortDescription: 'Para sair do portunhol e falar espanhol de verdade, no trabalho ou nas férias.',
     longDescription: 'A proximidade entre o português e o espanhol pode ser uma armadilha. Nosso curso foca justamente em diferenciar falsos amigos (falsos cognatos), dominar a pronúncia autêntica e permitir que você se expresse com naturalidade.',
     targetAudience: 'Profissionais em empresas com atuação na América Latina ou Espanha, viajantes que querem explorar o continente e amantes da cultura hispânica.',
     typicalActivities: [
@@ -87,22 +87,22 @@ export const languagesData: LanguageItem[] = [
     levels: [
       {
         level: 'A1',
-        title: 'Acceso (Iniciante)',
+        title: 'Acceso (iniciante)',
         whatYouLearn: 'Saudações, dados pessoais, pedir informações na rua e fazer pedidos em cafeterias.',
       },
       {
         level: 'A2',
-        title: 'Plataforma (Básico)',
+        title: 'Plataforma (básico)',
         whatYouLearn: 'Falar de acontecimentos recentes, descrever hábitos do passado e fazer reservas.',
       },
       {
         level: 'B1',
-        title: 'Umbral (Intermediário)',
+        title: 'Umbral (intermediário)',
         whatYouLearn: 'Contar histórias, expressar sentimentos, desejos e argumentar sobre assuntos de interesse.',
       },
       {
         level: 'B2',
-        title: 'Avanzado (Independente)',
+        title: 'Avanzado (independente)',
         whatYouLearn: 'Conversar com fluência com nativos, entender jornais e redigir propostas com vocabulário preciso.',
       },
     ],
@@ -139,7 +139,7 @@ export const languagesData: LanguageItem[] = [
     slug: 'frances',
     name: 'Francês',
     badge: 'Elegância e Carreira Global',
-    shortDescription: 'Descubra a musicalidade da língua francesa com método leve, prático e sem intimidação.',
+    shortDescription: 'Francês sem medo da pronúncia, com aula leve e muita conversa.',
     longDescription: 'O francês é uma das línguas oficiais de dezenas de organizações internacionais e porta de entrada para uma rica cultura artística, gastronômica e científica. Na Snowfield, você aprende a sonoridade francesa de forma intuitiva e divertida.',
     targetAudience: 'Estudantes interessados em intercâmbio (França, Canadá, Suíça), viajantes e entusiastas de gastronomia, moda e literatura.',
     typicalActivities: [
@@ -151,22 +151,22 @@ export const languagesData: LanguageItem[] = [
     levels: [
       {
         level: 'A1',
-        title: 'Découverte (Iniciante)',
+        title: 'Découverte (iniciante)',
         whatYouLearn: 'Pronúncia básica, saudações, pedir um café, dizer de onde você é e sua profissão.',
       },
       {
         level: 'A2',
-        title: 'Survie (Básico)',
+        title: 'Survie (básico)',
         whatYouLearn: 'Descrever viagens passadas, pedir orientações e manter diálogos curtos sobre a rotina.',
       },
       {
         level: 'B1',
-        title: 'Seuil (Intermediário)',
+        title: 'Seuil (intermediário)',
         whatYouLearn: 'Dar conselhos, justificar pontos de vista e viajar pela França com autonomia completa.',
       },
       {
         level: 'B2',
-        title: 'Indépendant (Avançado)',
+        title: 'Indépendant (avançado)',
         whatYouLearn: 'Compreender conferências, palestras e defender projetos profissionais em francês.',
       },
     ],
@@ -203,7 +203,7 @@ export const languagesData: LanguageItem[] = [
     slug: 'alemao',
     name: 'Alemão',
     badge: 'Tecnologia e Engenharia',
-    shortDescription: 'Desmistifique a gramática alemã com um método visual, direto e focado no uso prático.',
+    shortDescription: 'A gramática alemã explicada sem drama, sempre com foco em usar o idioma.',
     longDescription: 'Muito se fala sobre a complexidade do alemão, mas a lógica germânica é estruturada e incrivelmente coerente. Nosso curso desmistifica as declinações e palavras compostas através de exemplos práticos do cotidiano e do ambiente de negócios.',
     targetAudience: 'Engenheiros, profissionais de TI e da indústria automobilística do ABC Paulista, estudantes que buscam pós-graduação na Alemanha, Áustria ou Suíça.',
     typicalActivities: [
@@ -215,17 +215,17 @@ export const languagesData: LanguageItem[] = [
     levels: [
       {
         level: 'A1',
-        title: 'Start Deutsch 1',
+        title: 'Start deutsch 1',
         whatYouLearn: 'Apresentar-se, fazer compras no mercado, horas, preços e preenchimento de formulários simples.',
       },
       {
         level: 'A2',
-        title: 'Start Deutsch 2',
+        title: 'Start deutsch 2',
         whatYouLearn: 'Descrever ambiente de trabalho, falar sobre o passado, marcar compromissos e saúde.',
       },
       {
         level: 'B1',
-        title: 'Zertifikat Deutsch (Intermediário)',
+        title: 'Zertifikat deutsch (intermediário)',
         whatYouLearn: 'Compreensão de informações sobre trabalho, escola e lazer. Autonomia total em viagens.',
       },
     ],
@@ -262,7 +262,7 @@ export const languagesData: LanguageItem[] = [
     slug: 'italiano',
     name: 'Italiano',
     badge: 'Cultura, Gastronomia e Cidadania',
-    shortDescription: 'Mergulhe no ritmo e expressividade da língua italiana com aulas acolhedoras e divertidas.',
+    shortDescription: 'Italiano com música, comida e conversa. Serve para viagem, cidadania ou paixão.',
     longDescription: 'Aprender italiano é um verdadeiro prazer sensorial. Seja para obter a cidadania italiana, viajar pelas regiões da Itália ou se conectar com a história dos seus antepassados, nossas aulas combinam vivência cultural com conversação desde a primeira sessão.',
     targetAudience: 'Pessoas em processo de cidadania italiana, viajantes apaixonados por arte e gastronomia, e jovens e adultos que buscam um idioma afetuoso e acolhedor.',
     typicalActivities: [
@@ -274,17 +274,17 @@ export const languagesData: LanguageItem[] = [
     levels: [
       {
         level: 'A1',
-        title: 'Elementare (Iniciante)',
+        title: 'Elementare (iniciante)',
         whatYouLearn: 'Saudações, números, pedir comida em trattorias, dizer a origem e hábitos diários.',
       },
       {
         level: 'A2',
-        title: 'Pre-intermedio (Básico)',
+        title: 'Pre-intermedio (básico)',
         whatYouLearn: 'Expressar preferências, falar sobre férias passadas e descrever memórias de família.',
       },
       {
         level: 'B1',
-        title: 'Intermedio (Intermediário)',
+        title: 'Intermedio (intermediário)',
         whatYouLearn: 'Fluência conversacional para lidar com situações de imigração, entrevistas de cidadania e debates culturais.',
       },
     ],

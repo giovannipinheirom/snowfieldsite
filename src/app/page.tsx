@@ -7,7 +7,6 @@ import { MethodologyPreview } from '@/components/home/MethodologyPreview';
 import { ModalitiesSection } from '@/components/home/ModalitiesSection';
 import { SpecialCourses } from '@/components/home/SpecialCourses';
 import { TestimonialsSection } from '@/components/home/TestimonialsSection';
-import { CredibilityBar } from '@/components/home/CredibilityBar';
 import { PartnersStrip } from '@/components/home/PartnersStrip';
 import { PhotoGallery } from '@/components/home/PhotoGallery';
 import { TeamSection } from '@/components/home/TeamSection';
@@ -16,7 +15,7 @@ import { FinalCTA } from '@/components/home/FinalCTA';
 import { siteConfig } from '@/content/site';
 
 export const metadata: Metadata = {
-  title: 'Snowfield Languages | Aulas Divertidas e Personalizadas de Idiomas',
+  title: 'Snowfield Languages | aulas divertidas e personalizadas de idiomas',
   description: 'Aulas de inglês e idiomas para alunos de 4 a 90 anos. Modalidades online para todo o Brasil e presenciais em condomínios e empresas em São Bernardo do Campo.',
   alternates: {
     canonical: 'https://www.snowfieldlanguages.com.br',
@@ -67,7 +66,6 @@ export default function HomePage() {
       <TeamSection />
       <ModalitiesSection />
       <SpecialCourses />
-      <CredibilityBar />
       <TestimonialsSection />
       <FAQSection />
       <FinalCTA />

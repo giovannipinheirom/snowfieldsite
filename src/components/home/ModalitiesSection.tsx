@@ -1,119 +1,71 @@
 import React from 'react';
 import Link from 'next/link';
-import { siteConfig } from '@/content/site';
-import { 
-  Laptop, 
-  Building, 
-  Briefcase, 
-  ArrowRight, 
-  Check 
-} from 'lucide-react';
+import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
+
+const modalities = [
+  {
+    photo: '/fotos/online-escritorio.jpg',
+    alt: 'Aluno em aula online pelo notebook',
+    title: 'Online, ao vivo',
+    where: 'De qualquer lugar',
+    description:
+      'Aulas por videochamada, individuais ou em grupos pequenos. Foi assim que atendemos profissionais de TI do Brasil inteiro quando o home-office chegou, e funciona muito bem até hoje.',
+    link: '/cursos',
+    linkText: 'Ver os cursos',
+  },
+  {
+    photo: '/fotos/kids-turma-janela.jpg',
+    alt: 'Turma de crianças com a professora no condomínio',
+    title: 'No seu condomínio',
+    where: 'São Bernardo do Campo',
+    description:
+      'A professora vai até o espaço comum do prédio e as crianças estudam sem sair de casa. Começamos em 2022 e hoje são mais de cinco condomínios parceiros.',
+    link: '/aulas-em-condominios',
+    linkText: 'Levar para o meu condomínio',
+  },
+  {
+    photo: '/fotos/corporativo-reuniao-online.jpg',
+    alt: 'Aula de inglês corporativo em sala de reunião',
+    title: 'Na sua empresa',
+    where: 'Presencial ou online',
+    description:
+      'Foi assim que a escola começou, em 2019, dentro de empresas como Serasa Experian e Banco Volkswagen. Reuniões simuladas, case studies e o vocabulário do seu setor.',
+    link: '/aulas-corporativas',
+    linkText: 'Pedir uma proposta',
+  },
+];
 
 export const ModalitiesSection: React.FC = () => {
-  const modalities = [
-    {
-      icon: <Laptop className="w-8 h-8 text-primary-500" />,
-      title: 'Aulas Online ao Vivo',
-      tag: 'Brasil & Exterior',
-      description: 'Aulas particulares ou em duplas/grupos pequenos por videoconferência com lousa interativa e materiais compartilhados.',
-      features: [
-        'Sem deslocamento nem perda de tempo no trânsito',
-        'Horários flexíveis de manhã à noite',
-        'Alunos em diversos estados e países',
-      ],
-      link: '/cursos',
-      linkText: 'Ver cursos online',
-      primaryBg: 'bg-white',
-    },
-    {
-      icon: <Building className="w-8 h-8 text-primary-600" />,
-      title: 'Aulas em Condomínios',
-      tag: 'São Bernardo do Campo',
-      description: 'O professor vai até as áreas comuns do seu condomínio residencial. Segurança e comodidade máxima para famílias e crianças.',
-      features: [
-        'Crianças aprendem sem sair do próprio prédio',
-        'Turmas separadas rigidamente por faixa etária',
-        'Metodologia lúdica e comunicativa',
-      ],
-      link: '/aulas-em-condominios',
-      linkText: 'Quero no meu condomínio',
-      primaryBg: 'bg-primary-50/50',
-      isPopular: true,
-    },
-    {
-      icon: <Briefcase className="w-8 h-8 text-secondary-800" />,
-      title: 'Aulas Corporativas (In-Company)',
-      tag: 'Empresas & Equipes',
-      description: 'Capacitação in-company em São Bernardo do Campo ou online ao vivo para filiais com foco direto nos objetivos do negócio.',
-      features: [
-        'Treinamento para reuniões, e-mails e apresentações',
-        'Alinhamento com o setor da empresa',
-        'Relatórios de evolução para a gestão / RH',
-      ],
-      link: '/aulas-corporativas',
-      linkText: 'Solicitar proposta corporativa',
-      primaryBg: 'bg-white',
-    },
-  ];
-
   return (
-    <section className="py-16 sm:py-24 bg-secondary-50/60 border-b border-secondary-100">
+    <section className="py-16 sm:py-24 bg-secondary-50 border-b border-secondary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-primary-600 block mb-2">
-            Formatos de Atendimento
-          </span>
+        <div className="max-w-2xl mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-secondary-900 tracking-tight">
-            Três modalidades pensadas para a sua rotina
+            Onde acontecem as aulas
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-secondary-600">
-            A Snowfield Languages não possui sede física fixa: levamos o aprendizado até você onde for mais prático.
+          <p className="mt-3 text-base text-secondary-600">
+            Não temos sede física. Preferimos ir até onde o aluno está.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {modalities.map((item, idx) => (
-            <div
-              key={idx}
-              className={`rounded-3xl p-7 sm:p-8 border border-secondary-200/80 shadow-md flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl ${item.primaryBg}`}
-            >
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="p-3 rounded-2xl bg-white shadow-sm border border-secondary-100">
-                    {item.icon}
-                  </div>
-                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-secondary-100 text-secondary-700">
-                    {item.tag}
-                  </span>
-                </div>
-
-                <h3 className="text-xl sm:text-2xl font-bold text-secondary-900 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-secondary-600 leading-relaxed mb-6">
-                  {item.description}
-                </p>
-
-                <ul className="space-y-2.5 mb-8 text-xs sm:text-sm text-secondary-700">
-                  {item.features.map((feat, fIdx) => (
-                    <li key={fIdx} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-primary-600 shrink-0 mt-0.5" />
-                      <span>{feat}</span>
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {modalities.map((item) => (
+            <article key={item.title} className="flex flex-col">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-5">
+                <Image src={item.photo} alt={item.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
-
-              <div className="pt-4 border-t border-secondary-200/60">
-                <Link
-                  href={item.link}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm bg-white hover:bg-secondary-900 text-secondary-900 hover:text-white border border-secondary-300 transition-colors shadow-sm"
-                >
-                  <span>{item.linkText}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
+              <span className="text-sm text-secondary-500">{item.where}</span>
+              <h3 className="text-2xl font-bold text-secondary-900 mt-1 mb-3">{item.title}</h3>
+              <p className="text-sm sm:text-base text-secondary-600 leading-relaxed mb-5 flex-1">{item.description}</p>
+              <Link
+                href={item.link}
+                className="inline-flex items-center gap-2 font-bold text-primary-700 hover:text-primary-800 underline underline-offset-4 decoration-primary-300 self-start"
+              >
+                {item.linkText}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </article>
           ))}
         </div>
       </div>

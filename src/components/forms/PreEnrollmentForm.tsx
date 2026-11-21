@@ -7,7 +7,7 @@ import { TargetAudience, LeadFormData } from '@/types';
 import { formatPhoneNumber } from '@/lib/phone';
 import { SuccessModal } from './SuccessModal';
 import { trackEvent } from '@/lib/analytics';
-import { Send, Loader2, Sparkles, ShieldCheck } from 'lucide-react';
+import { Send, Loader2, ShieldCheck } from 'lucide-react';
 
 interface PreEnrollmentFormProps {
   initialAudience?: TargetAudience;
@@ -197,7 +197,7 @@ export const PreEnrollmentForm: React.FC<PreEnrollmentFormProps> = ({
                   onClick={() => setFormData({ ...formData, audience: opt.id as TargetAudience })}
                   className={`py-2.5 px-2 text-xs sm:text-sm font-semibold rounded-xl border text-center transition-all ${
                     formData.audience === opt.id
-                      ? 'bg-primary-600 text-white border-primary-600 shadow-md shadow-primary-600/20'
+                      ? 'bg-primary-600 text-white border-primary-600 shadow-md'
                       : 'bg-secondary-50 text-secondary-700 border-secondary-200 hover:bg-secondary-100'
                   }`}
                 >
@@ -280,7 +280,7 @@ export const PreEnrollmentForm: React.FC<PreEnrollmentFormProps> = ({
           {/* CAMPOS CONDICIONAIS */}
           {/* Condicional 1: Idade do aluno (Apenas se "filho") */}
           {formData.audience === 'filho' && (
-            <div className="p-4 rounded-xl bg-primary-50/60 border border-primary-100 animate-in fade-in duration-200">
+            <div className="p-4 rounded-xl bg-primary-50/60 border border-primary-100">
               <label htmlFor="student-age-input" className="block text-sm font-bold text-primary-900 mb-1.5">
                 Idade do seu filho(a) <span className="text-rose-500">*</span>
               </label>
@@ -300,7 +300,7 @@ export const PreEnrollmentForm: React.FC<PreEnrollmentFormProps> = ({
 
           {/* Condicional 2: Empresa e Colaboradores (Apenas se "empresa") */}
           {formData.audience === 'empresa' && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 rounded-xl bg-secondary-50 border border-secondary-200 animate-in fade-in duration-200">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 rounded-xl bg-secondary-50 border border-secondary-200">
               <div>
                 <label htmlFor="company-name-input" className="block text-sm font-bold text-secondary-800 mb-1.5">
                   Nome da empresa <span className="text-rose-500">*</span>
@@ -418,7 +418,7 @@ export const PreEnrollmentForm: React.FC<PreEnrollmentFormProps> = ({
           <button
             type="submit"
             disabled={loading}
-            className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-primary-500/25 transition-all text-base disabled:opacity-70 disabled:cursor-not-allowed"
+            className="w-full inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all text-base disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {loading ? (
               <>

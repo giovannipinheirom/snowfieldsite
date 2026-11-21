@@ -5,7 +5,7 @@ import { siteConfig } from '@/content/site';
 import { ShieldCheck, ArrowLeft, Mail, Lock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade & Proteção de Dados (LGPD) | Snowfield Languages',
+  title: 'Política de privacidade & proteção de dados (LGPD) | Snowfield Languages',
   description: 'Saiba como a Snowfield Languages trata e protege seus dados pessoais em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).',
 };
 
@@ -22,12 +22,8 @@ export default function PoliticaPrivacidadePage() {
         </Link>
 
         <div className="space-y-4 mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
-            <ShieldCheck className="w-3.5 h-3.5 text-primary-600" />
-            <span>LGPD Compliance (Lei nº 13.709/2018)</span>
-          </div>
           <h1 className="text-3xl sm:text-4xl font-black text-secondary-900 tracking-tight">
-            Política de Privacidade e Tratamento de Dados
+            Política de privacidade e tratamento de dados
           </h1>
           <p className="text-xs sm:text-sm text-secondary-500">
             Última atualização: Outubro de 2026
@@ -36,7 +32,7 @@ export default function PoliticaPrivacidadePage() {
 
         <div className="prose prose-slate max-w-none space-y-8 text-sm sm:text-base text-secondary-700 leading-relaxed">
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-secondary-900">1. Introdução e Compromisso</h2>
+            <h2 className="text-xl font-bold text-secondary-900">1. Introdução e compromisso</h2>
             <p>
               A <strong>Snowfield Languages</strong> preza pela transparência, privacidade e segurança dos dados de seus alunos, responsáveis legais e visitantes. Esta Política de Privacidade explica de forma clara como tratamos seus dados pessoais quando você navega em nosso site, preenche formulários de pré-matrícula ou realiza o teste de nível online.
             </p>

@@ -15,8 +15,7 @@ import {
   GraduationCap, 
   Building2, 
   Home, 
-  BookOpen, 
-  Sparkles,
+  BookOpen,
   PhoneCall
 } from 'lucide-react';
 
@@ -49,7 +48,7 @@ export const Header: React.FC = () => {
     { label: 'Empresas', href: '/aulas-corporativas' },
     { label: 'Metodologia', href: '/metodologia' },
     { label: 'Sobre', href: '/sobre' },
-    { label: 'Teste de Nível', href: '/teste-de-nivel', isHighlight: true },
+    { label: 'Teste de nível', href: '/teste-de-nivel', isHighlight: true },
     { label: 'Contato', href: '/contato' },
   ];
 
@@ -100,11 +99,8 @@ export const Header: React.FC = () => {
               {dropdownOpen && (
                 <div 
                   onMouseLeave={() => setDropdownOpen(false)}
-                  className="absolute left-0 mt-1 w-64 rounded-xl bg-white shadow-xl border border-secondary-100 py-2.5 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                  className="absolute left-0 mt-1 w-64 rounded-xl bg-white shadow-xl border border-secondary-100 py-2.5 z-50"
                 >
-                  <div className="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-secondary-400">
-                    Idiomas Oferecidos
-                  </div>
                   {languagesData.map((lang) => (
                     <Link
                       key={lang.slug}
@@ -112,19 +108,9 @@ export const Header: React.FC = () => {
                       className="flex items-center justify-between px-3 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg mx-1 transition-colors"
                     >
                       <span className="font-medium">{lang.name}</span>
-                      <span className="text-[11px] bg-secondary-100 text-secondary-600 px-2 py-0.5 rounded-full">
-                        {lang.badge}
-                      </span>
                     </Link>
                   ))}
-                  <div className="border-t border-secondary-100 my-1"></div>
-                  <Link
-                    href="/ingles-regular"
-                    className="flex items-center gap-2 px-3 py-2 text-xs font-medium text-primary-600 hover:bg-primary-50 rounded-lg mx-1"
-                  >
-                    <Sparkles className="w-3.5 h-3.5 text-primary-500" />
-                    <span>Conhecer Inglês Regular</span>
-                  </Link>
+
                 </div>
               )}
             </div>
@@ -153,7 +139,7 @@ export const Header: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleAgendarClick}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-md shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30 transition-all transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm px-5 py-2.5 rounded-full transition-colors"
             >
               <MessageCircle className="w-4 h-4 fill-white/20" />
               <span>Agendar aula</span>

@@ -13,7 +13,6 @@ import {
   ArrowRight, 
   RotateCcw, 
   CheckCircle, 
-  Sparkles, 
   AlertCircle, 
   MessageCircle, 
   GraduationCap, 
@@ -212,23 +211,19 @@ export const LevelTestWizard: React.FC = () => {
     const waUrl = whatsappLink(waResultMsg);
 
     return (
-      <div className="max-w-3xl mx-auto bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-secondary-100 animate-in fade-in duration-300">
+      <div className="max-w-3xl mx-auto bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-secondary-100">
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-100 text-primary-800 font-bold text-xs uppercase tracking-wider">
-            <Sparkles className="w-4 h-4 text-primary-600" />
-            <span>Resultado do Teste de Nível de Inglês</span>
-          </div>
 
           <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary-900">
             Parabéns, {leadName}! Aqui está sua avaliação:
           </h2>
 
-          <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-primary-900 via-secondary-900 to-primary-950 text-white shadow-xl relative overflow-hidden">
+          <div className="p-6 sm:p-8 rounded-2xl bg-secondary-900 text-white shadow-xl relative overflow-hidden">
             <div className="relative z-10 space-y-2">
               <span className="text-primary-300 text-sm font-semibold uppercase tracking-widest">
                 Seu Nível Estimado no Quadro Europeu (CEFR):
               </span>
-              <div className="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-300 via-white to-primary-100">
+              <div className="text-5xl sm:text-6xl font-black text-white">
                 {result.level}
               </div>
               <div className="text-lg font-bold text-secondary-200">
@@ -297,7 +292,7 @@ export const LevelTestWizard: React.FC = () => {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-emerald-600/30 text-base transition-all transform hover:-translate-y-0.5"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg text-base transition-all"
             >
               <MessageCircle className="w-5 h-5 fill-white/20" />
               <span>Falar no WhatsApp com meu resultado</span>
@@ -352,7 +347,7 @@ export const LevelTestWizard: React.FC = () => {
           </div>
           <div className="w-full bg-secondary-100 rounded-full h-2.5 overflow-hidden">
             <div
-              className="bg-gradient-to-r from-primary-500 to-primary-600 h-2.5 rounded-full transition-all duration-300"
+              className="bg-primary-500 h-2.5 rounded-full transition-all duration-300"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
@@ -425,7 +420,7 @@ export const LevelTestWizard: React.FC = () => {
             type="button"
             onClick={handleNext}
             disabled={!selectedAnswer}
-            className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-primary-500/20 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+            className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white text-xs sm:text-sm font-bold shadow-md transition-all disabled:opacity-40 disabled:cursor-not-allowed"
           >
             <span>{currentIndex === totalQuestions - 1 ? 'Concluir Teste' : 'Próxima'}</span>
             <ArrowRight className="w-4 h-4" />
@@ -435,11 +430,10 @@ export const LevelTestWizard: React.FC = () => {
 
       {/* MODAL DE LEAD ANTES DO RESULTADO (GATE OBRIGATÓRIO) */}
       {showLeadGate && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-secondary-950/70 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-secondary-100 space-y-5 animate-in zoom-in-95 duration-200">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-secondary-950/70 backdrop-blur-sm">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-secondary-100 space-y-5">
             <div className="text-center space-y-2">
               <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mx-auto">
-                <Sparkles className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-secondary-900">
                 Seu teste foi finalizado!
@@ -519,7 +513,7 @@ export const LevelTestWizard: React.FC = () => {
               <button
                 type="submit"
                 disabled={leadSubmitting}
-                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg shadow-primary-500/25 transition-all text-sm disabled:opacity-70"
+                className="w-full inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg transition-all text-sm disabled:opacity-70"
               >
                 {leadSubmitting ? (
                   <>

@@ -47,7 +47,7 @@ export const siteConfig: SiteContactInfo = {
   peakEnrollmentMonths: ['Fevereiro', 'Agosto'],
   seasonalBanner: {
     enabled: true,
-    text: 'Matrículas abertas para o semestre! Vagas limitadas para turmas presenciais e horários online.',
+    text: 'Matrículas abertas para o semestre.',
     linkUrl: '/contato',
     linkText: 'Garantir minha vaga',
     startDate: '2026-01-10',

@@ -4,7 +4,7 @@ export const coursesData: CourseItem[] = [
   {
     id: 'ingles-regular-anual',
     slug: 'ingles-regular',
-    title: 'Inglês Regular Personalizado',
+    title: 'Inglês regular personalizado',
     language: 'Inglês',
     audience: 'Crianças, adolescentes e adultos (de 4 a 90 anos)',
     format: 'Online',
@@ -24,7 +24,7 @@ export const coursesData: CourseItem[] = [
   {
     id: 'intensivo-viagens-express',
     slug: 'intensivo-para-viagens',
-    title: 'Intensivo de Sobrevivência para Viagens',
+    title: 'Intensivo de sobrevivência para viagens',
     language: 'Inglês ou Espanhol',
     audience: 'Adultos e famílias com viagem agendada',
     format: 'Online',
@@ -33,7 +33,7 @@ export const coursesData: CourseItem[] = [
     price: 'R$ 690,00',
     checkoutUrl: 'https://pay.snowfieldlanguages.com.br/checkout/viagens-express', // Exemplo com checkoutUrl configurado para testar botão "Comprar agora"
     features: [
-      'Check-in, imigração e alfândega sem suor frio',
+      'Check-in, imigração e alfândega',
       'Como pedir refeições, fazer compras e pedir descontos',
       'Como resolver imprevistos: mala perdida, atrasos e saúde',
       'Guia de bolso digital em PDF com áudios de pronúncia rápida',
@@ -44,7 +44,7 @@ export const coursesData: CourseItem[] = [
   {
     id: 'preparatorio-toefl-cambridge-duolingo',
     slug: 'preparatorios',
-    title: 'Preparatório para Exames Internacionais (TOEFL / Cambridge / Duolingo)',
+    title: 'Preparatório para exames internacionais (TOEFL / Cambridge / Duolingo)',
     language: 'Inglês',
     audience: 'Estudantes para intercâmbio, pós-graduação e processos de imigração',
     format: 'Online',
@@ -64,7 +64,7 @@ export const coursesData: CourseItem[] = [
   {
     id: 'aulas-condominios-kids-teens',
     slug: 'aulas-em-condominios',
-    title: 'Inglês Lúdico em Condomínios (Kids & Teens)',
+    title: 'Inglês lúdico em condomínios (Kids & Teens)',
     language: 'Inglês',
     audience: 'Crianças e adolescentes residentes em condomínios em SBC',
     format: 'Presencial (SBC)',
@@ -84,7 +84,7 @@ export const coursesData: CourseItem[] = [
   {
     id: 'corporativo-in-company',
     slug: 'aulas-corporativas',
-    title: 'Business Languages & Aulas Corporativas In-Company',
+    title: 'Business Languages & aulas corporativas In-Company',
     language: 'Inglês, Espanhol ou Francês',
     audience: 'Empresas, startups e executivos em São Bernardo do Campo e online',
     format: 'In-Company',

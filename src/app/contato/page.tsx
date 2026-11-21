@@ -15,8 +15,8 @@ import {
 import { InstagramIcon } from '@/components/ui/InstagramIcon';
 
 export const metadata: Metadata = {
-  title: 'Contato & Matrícula | Snowfield Languages',
-  description: 'Fale com a Snowfield Languages via WhatsApp, e-mail ou Instagram. Agende sua aula experimental ou tire dúvidas sobre nossas turmas.',
+  title: 'Contato & matrícula | Snowfield Languages',
+  description: 'Contato via WhatsApp, e-mail ou Instagram. Agende sua aula experimental ou tire dúvidas sobre nossas turmas.',
 };
 
 export default function ContatoPage() {
@@ -24,14 +24,11 @@ export default function ContatoPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-primary-600 block">
-            Canais de Atendimento
-          </span>
           <h1 className="text-3xl sm:text-5xl font-black text-secondary-900 tracking-tight">
-            Fale com a Snowfield Languages
+            Contato
           </h1>
           <p className="text-base sm:text-lg text-secondary-600 leading-relaxed">
-            Estamos prontos para atender você, tirar dúvidas e encontrar o formato de aula perfeito para sua rotina.
+            O jeito mais rápido é o WhatsApp. Quem responde é a Manu.
           </p>
         </div>
 
@@ -40,7 +37,7 @@ export default function ContatoPage() {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-secondary-50 rounded-3xl p-6 sm:p-8 border border-secondary-200/80 space-y-6">
               <h2 className="text-xl font-bold text-secondary-900">
-                Canais Oficiais
+                Canais oficiais
               </h2>
 
               <div className="space-y-4 text-sm text-secondary-700">
@@ -141,7 +138,7 @@ export default function ContatoPage() {
           <div className="lg:col-span-7">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-secondary-900">
-                Formulário de Pré-Matrícula e Contato
+                Formulário de Pré-Matrícula e contato
               </h2>
               <p className="text-xs sm:text-sm text-secondary-600 mt-1">
                 Preencha os dados abaixo e nossa equipe entrará em contato com você:

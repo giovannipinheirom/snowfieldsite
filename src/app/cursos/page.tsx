@@ -11,12 +11,11 @@ import {
   CheckCircle2, 
   ArrowRight, 
   MessageCircle, 
-  CreditCard,
-  Sparkles 
+  CreditCard 
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Catálogo de Cursos de Idiomas | Snowfield Languages',
+  title: 'Catálogo de cursos de idiomas | Snowfield Languages',
   description: 'Conheça nossos cursos de inglês regular, intensivo para viagens, preparatórios para exames internacionais e aulas corporativas.',
 };
 
@@ -25,15 +24,11 @@ export default function CursosCatalogPage() {
     <div className="bg-white py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
-            <GraduationCap className="w-3.5 h-3.5 text-primary-600" />
-            <span>Catálogo Acadêmico Completo</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-black text-secondary-900 tracking-tight">
-            Cursos Desenvolvidos para Seus Objetivos Reais
+            Cursos
           </h1>
           <p className="text-base sm:text-lg text-secondary-600 leading-relaxed">
-            Escolha o programa que mais combina com a sua rotina e comece a falar com confiança.
+            Se ficar em dúvida sobre qual escolher, chama a gente no WhatsApp que a gente ajuda.
           </p>
         </div>
 
@@ -47,9 +42,9 @@ export default function CursosCatalogPage() {
             return (
               <div
                 key={course.id}
-                className={`rounded-3xl p-7 border flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-xl ${
+                className={`rounded-3xl p-7 border flex flex-col justify-between transition-all duration-200 hover:shadow-xl ${
                   course.highlight
-                    ? 'bg-gradient-to-b from-primary-50/50 to-white border-primary-300 shadow-md ring-1 ring-primary-300'
+                    ? 'bg-white border-primary-300 shadow-md ring-1 ring-primary-300'
                     : 'bg-white border-secondary-200 shadow-sm'
                 }`}
               >
@@ -109,7 +104,7 @@ export default function CursosCatalogPage() {
                       href={course.checkoutUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-bold py-3 px-4 rounded-xl shadow-md text-sm transition-all"
+                      className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-md text-sm transition-all"
                     >
                       <CreditCard className="w-4 h-4" />
                       <span>Comprar agora</span>

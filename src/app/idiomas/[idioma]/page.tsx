@@ -5,8 +5,7 @@ import Link from 'next/link';
 import { languagesData } from '@/content/idiomas';
 import { whatsappLink } from '@/lib/whatsapp';
 import { FlashcardInteraction } from '@/components/ui/FlashcardInteraction';
-import { 
-  Sparkles, 
+import {  
   Users, 
   CheckCircle2, 
   GraduationCap, 
@@ -52,10 +51,6 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho do Idioma */}
         <div className="max-w-4xl mx-auto text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-100 text-primary-800 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-4 h-4 text-primary-600" />
-            <span>Curso de Idiomas • {lang.badge}</span>
-          </div>
           <h1 className="text-4xl sm:text-5xl font-black text-secondary-900 tracking-tight">
             Aulas de {lang.name} com Foco em Fluência Real
           </h1>
@@ -77,7 +72,6 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
               href="/teste-de-nivel"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary-900 hover:bg-secondary-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors"
             >
-              <Sparkles className="w-4 h-4 text-primary-300" />
               <span>Fazer teste de nível online</span>
             </Link>
           </div>
@@ -144,9 +138,6 @@ export default async function LanguageDetailPage({ params }: LanguagePageProps) 
         {/* 4. O que se aprende em cada nível */}
         <div className="mb-20">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary-600 block mb-1">
-              Quadro Europeu de Referência (CEFR)
-            </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-secondary-900">
               O que se aprende em cada nível de {lang.name}
             </h2>

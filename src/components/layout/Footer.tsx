@@ -4,15 +4,13 @@ import Image from 'next/image';
 import { siteConfig } from '@/content/site';
 import { whatsappLink } from '@/lib/whatsapp';
 import { PlaceholderBadge } from '@/components/ui/PlaceholderBadge';
-import { 
+import {
   Phone, 
   Mail, 
   Clock, 
   MapPinOff, 
-  Globe2, 
-  Sparkles,
-  ShieldCheck,
-  ChevronRight
+  Globe2,
+  ShieldCheck
 } from 'lucide-react';
 import { InstagramIcon } from '@/components/ui/InstagramIcon';
 
@@ -34,7 +32,7 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sm text-secondary-400 leading-relaxed">
-              Aulas divertidas, leves e personalizadas para alunos de 4 a 90 anos. Em atividade desde {siteConfig.sinceYear}, transformando a confiança de quem quer falar com fluência de verdade.
+              Escola de idiomas desde {siteConfig.sinceYear}. Aulas para alunos de 4 a 90 anos, online e em São Bernardo do Campo.
             </p>
             <div className="flex items-start gap-2 text-xs text-secondary-400 bg-secondary-800/60 p-3 rounded-lg border border-secondary-700/50">
               <MapPinOff className="w-4 h-4 text-primary-400 shrink-0 mt-0.5" />
@@ -46,44 +44,38 @@ export const Footer: React.FC = () => {
 
           {/* Coluna 2: Navegação & Programas */}
           <div className="space-y-3">
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase">
-              Programas & Aulas
+            <h4 className="text-white font-bold text-base">
+              Cursos
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/ingles-regular" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
-                  <span>Inglês Regular</span>
+                <Link href="/ingles-regular" className="hover:text-primary-400 transition-colors ">
+                  <span>Inglês regular</span>
                 </Link>
               </li>
               <li>
-                <Link href="/aulas-em-condominios" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
-                  <span>Aulas em Condomínios (Kids & Teens)</span>
+                <Link href="/aulas-em-condominios" className="hover:text-primary-400 transition-colors ">
+                  <span>Aulas em condomínios</span>
                 </Link>
               </li>
               <li>
-                <Link href="/aulas-corporativas" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
-                  <span>Aulas Corporativas (In-Company)</span>
+                <Link href="/aulas-corporativas" className="hover:text-primary-400 transition-colors ">
+                  <span>Aulas para empresas</span>
                 </Link>
               </li>
               <li>
-                <Link href="/intensivo-para-viagens" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
-                  <span>Intensivo para Viagens</span>
+                <Link href="/intensivo-para-viagens" className="hover:text-primary-400 transition-colors ">
+                  <span>Intensivo para viagens</span>
                 </Link>
               </li>
               <li>
-                <Link href="/preparatorios" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
+                <Link href="/preparatorios" className="hover:text-primary-400 transition-colors ">
                   <span>Preparatórios (TOEFL, Cambridge, Duolingo)</span>
                 </Link>
               </li>
               <li>
-                <Link href="/teste-de-nivel" className="text-primary-400 hover:text-primary-300 font-semibold transition-colors flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>Fazer Teste de Nível Gratuito</span>
+                <Link href="/teste-de-nivel" className="text-primary-400 hover:text-primary-300 font-semibold transition-colors ">
+                  <span>Teste de nível gratuito</span>
                 </Link>
               </li>
             </ul>
@@ -91,37 +83,32 @@ export const Footer: React.FC = () => {
 
           {/* Coluna 3: Idiomas */}
           <div className="space-y-3">
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase">
-              Idiomas Oferecidos
+            <h4 className="text-white font-bold text-base">
+              Idiomas
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/idiomas/ingles" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
+                <Link href="/idiomas/ingles" className="hover:text-primary-400 transition-colors ">
                   <span>Inglês</span>
                 </Link>
               </li>
               <li>
-                <Link href="/idiomas/espanhol" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
+                <Link href="/idiomas/espanhol" className="hover:text-primary-400 transition-colors ">
                   <span>Espanhol</span>
                 </Link>
               </li>
               <li>
-                <Link href="/idiomas/frances" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
+                <Link href="/idiomas/frances" className="hover:text-primary-400 transition-colors ">
                   <span>Francês</span>
                 </Link>
               </li>
               <li>
-                <Link href="/idiomas/alemao" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
+                <Link href="/idiomas/alemao" className="hover:text-primary-400 transition-colors ">
                   <span>Alemão</span>
                 </Link>
               </li>
               <li>
-                <Link href="/idiomas/italiano" className="hover:text-primary-400 transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5 text-primary-500" />
+                <Link href="/idiomas/italiano" className="hover:text-primary-400 transition-colors ">
                   <span>Italiano</span>
                 </Link>
               </li>
@@ -135,8 +122,8 @@ export const Footer: React.FC = () => {
 
           {/* Coluna 4: Contatos & Horário */}
           <div className="space-y-3">
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase">
-              Atendimento & Contato
+            <h4 className="text-white font-bold text-base">
+              Contato
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
@@ -173,7 +160,7 @@ export const Footer: React.FC = () => {
               <li className="pt-1 text-xs text-secondary-400 flex items-start gap-2 bg-secondary-800/40 p-2.5 rounded-lg border border-secondary-700/40">
                 <Clock className="w-4 h-4 text-primary-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-secondary-300 font-medium">Horário de atendimento:</span>
+                  <span className="text-secondary-300 font-medium">Atendimento:</span>
                   <div className="mt-0.5">
                     {siteConfig.officeHours.time},{' '}
                     <PlaceholderBadge text={siteConfig.officeHours.daysPlaceholder} />
@@ -195,13 +182,13 @@ export const Footer: React.FC = () => {
               className="hover:text-primary-400 transition-colors flex items-center gap-1"
             >
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Política de Privacidade (LGPD)</span>
+              <span>Política de privacidade</span>
             </Link>
             <Link 
               href="/contato" 
               className="hover:text-primary-400 transition-colors"
             >
-              Fale Conosco
+              Fale conosco
             </Link>
           </div>
         </div>
